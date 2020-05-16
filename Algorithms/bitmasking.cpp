@@ -66,13 +66,52 @@ void generateSubsets( char *a) {
           filterChars(a,i);
 }
 
+void unique2Elements( int *a, int n) {
+
+    int ans = 0;
+    //Range-based for loops work with arrays, but not with pointers. 
+    //The issue here is that arrays is actually a pointer and not an array.
+    // for( int x:a )
+    //     ans^=x;
+    for ( int i=0; i<n; i++) {
+        ans^=a[i];
+    }
+    //find the rightmost set bit in the answer!
+    
+    int i = 0;
+    int temp = ans;
+    while(temp > 0) {
+        if(temp&1) {
+            break;
+        }
+        i++;
+        temp = temp >> 1;
+    }
+
+    int mask = 1<<i;
+    int firstNo = 0;
+    for( int i=0; i < n; i++ ) {
+        if((mask&a[i])!=0)
+             firstNo^=a[i];
+    }
+     
+    int secondNo = ans^firstNo;
+    cout << firstNo << endl;
+    cout << secondNo << endl;
+    
+
+}
 int main() {
 
     int n,i;
     // cin >> n;
     // cin >> i;
-    char a[100];
-    cin >> a;
+    // char a[100];
+    // cin >> a;
+
+    //For 2 Unique Elements 
+    int a[] = { 1,3,5,6,3,2,1,2 };
+    n = sizeof(a)/sizeof( int );
     
     
     // cout << Ithbit(n,i) << endl;
@@ -82,7 +121,8 @@ int main() {
     // cout << n << endl;
     // clearIthBit(n,i);
     // cout << n << endl;
-    generateSubsets(a);
+    // generateSubsets(a);
+    unique2Elements(a,n);
     return 0;
 }
 
