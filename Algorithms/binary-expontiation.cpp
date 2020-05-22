@@ -64,6 +64,22 @@ int32_t main()
 		}
 	}
 
+	// In most of the cases we need to find the modular of functions
+	// So we will find find it by %
+	// while (n) {
+
+	// 	if (n % 2) {
+	// 		res = (res * a) % p;
+	// 		n--;
+	// 	}
+
+	// 	else {
+	// 		n /= 2;
+	// 		a = (a*p) % p;
+	// 	}
+	// }
+
+
 	cout << res;
 
 	return 0;
