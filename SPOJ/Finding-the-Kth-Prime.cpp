@@ -35,6 +35,9 @@ typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_
 //Initializing Boolean Globally because
 // It initializes with 0 values then
 // rather than storing Garbage values
+// Also bool takes 1 bit and whereas int
+// takes 4 bits, Ss taking bool in order to
+// Avoid TLE!!!
 bool a[90000001];
 
 

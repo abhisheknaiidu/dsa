@@ -48,6 +48,8 @@ int32_t main()
 	int n;
 	cin >> n;
 
+	// If n is composite number then there will be a
+	// prime number below sqrt(n)
 	for (int i = 2; i * i <= n; ++i)
 	{
 
@@ -62,6 +64,8 @@ int32_t main()
 		}
 	}
 
+	// If n is prime number, then there will be no prime
+	// divisors below sqrt(n)
 	//Means n is a prime number now to the power n.
 	if (n > 1)
 	{
