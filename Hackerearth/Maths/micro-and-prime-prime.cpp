@@ -29,6 +29,9 @@ using namespace std;
 #define inf             1e18
 mt19937                 rng(chrono::steady_clock::now().time_since_epoch().count());
 
+int a[1000001];
+int pp[1000001];
+
 typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> pbds;
 
 
@@ -41,34 +44,68 @@ void abhisheknaiidu()
 #endif
 }
 
-void check(int n) {
 
-	vector<int> a(n + 1);
-	for (int i = 2; i <= n; i++) a[i] = 1;
+
+void ispp() {
+
+	int max = 1000000;
+
+
+
+	for (int i = 2; i <= max; i++) a[i] = 1;
 
 	a[0] = a[1] = 0;
 
-	for (int i = 2; i * i <= n ; i++) {
+	for (int i = 2;  i * i <= max; i++)
+	{
 		if (a[i]) {
-			for (int j = i * i; j <= n; j += i)
+			for (int j = i * i; j <= max ; j += i)
+			{
 				a[j] = 0;
+			}
 		}
 	}
 
-	for (int i = 1; i <= n; i++)
+	int count = 0;
+	for (int i = 1; i <= max; ++i)
 	{
-		if (a[i]) cout << i << endl;
+		if (a[i]) count++;
+
+		if (a[count])
+			pp[i] = 1;
+
+		else
+			pp[i] = 0;
+	}
+
+	// Taking cummalative sum in order to
+	// avoid TLE
+	// Useful if we want to take the sum
+	// from L to R
+	for ( int i = 1; i <= max; i++) {
+		pp[i] += pp[i - 1];
 	}
 }
+
 
 int32_t main()
 {
 	abhisheknaiidu();
+	ispp();
 
-	int n;
-	cin >> n;
+	w(x) {
 
-	check(n);
+		int L, R;
+
+		cin >> L >> R;
+
+
+		// Now the answer can be given in constant time!
+		int count = pp[R] - pp[L - 1];
+
+		cout << count << endl;
+
+	}
 
 
 	return 0;
