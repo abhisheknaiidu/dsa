@@ -1,4 +1,4 @@
-//https://www.hackerrank.com/challenges/fibonacci-finding-easy/problem
+// https://www.codechef.com/problems/GCDQ
 
 
 /******************************************
@@ -35,8 +35,24 @@ mt19937                 rng(chrono::steady_clock::now().time_since_epoch().count
 
 typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> pbds;
 
-int a[3];
-int I[3][3], T[3][3];
+int pre[100005], suf[100005];
+int a[100001];
+
+// STEP 1
+// Approach to solve this problem -
+// To answer the query L to R
+// find out GCD of elements 1 to L-1 = g1
+// then find out the GCD of elements from
+// R+1 to N = g2
+// Answer will be now = GCD(g1,g2)
+
+// STEP 2
+// Prepare prefix and suffix array
+// Pre[] = array to store gcd of first i elements at pos i
+// Pre[i] = gcd(a[1],a[2],... a[i])
+// Suf[] = array to store gcd of elements from i to N
+// Suf[i] = gcd(a[i], a[i+1] .... a[N])
+
 
 void abhisheknaiidu()
 {
@@ -47,59 +63,39 @@ void abhisheknaiidu()
 #endif
 }
 
-void mul(int A[3][3], int B[3][3], int dim) {
+int gcd(int a, int b) {
+	if (b == 0) return a;
 
-	int res[dim + 1][dim + 1];
 
-	REP(i, 1, dim) {
-		REP(j, 1, dim) {
-			res[i][j] = 0;
-			REP(k, 1, dim) {
-				res[i][j] += (A[i][k] * B[k][j]) % mod;
-			}
-		}
-	}
-
-	REP(i, 1, dim) REP(j, 1, dim) A[i][j] = res[i][j] % mod;
+	return gcd(b, a % b );
 }
 
-int getfib(int n) {
-
-	if (n <= 2) return a[n];
-
-	// Initializing the Indentity Matrix
-	I[1][1] = I[2][2] = 1;
-	I[1][2] = I[2][1] = 0;
-
-	// Initializig the transitive matrix
-	T[1][1] = 0;
-	T[1][2] = T[2][2] = T[2][1] = 1;
-
-	n = n - 1;
-
-	// Calculating T^n-1 in log(n) time
-	while (n) {
-		if (n % 2)
-			mul(I, T, 2), n--;
-
-		else
-			mul(T, T, 2), n /= 2;
-	}
-
-	int ans = (a[1] * I[1][1] + a[2] * I[2][1]) % mod;
-
-	return ans;
-}
 
 int32_t main()
 {
 	abhisheknaiidu();
 
-
 	w(x) {
-		int n;
-		cin >> a[1] >> a[2] >> n, n++;
-		cout << getfib(n) << endl;
+		int n, q;
+		cin >> n >> q;
+
+		REP(i, 1, n) cin >> a[i];
+
+		pre[0] = suf[n + 1] = 0;
+
+		// to initialize prefix array
+		REP(i, 1, n) pre[i] = gcd(pre[i - 1], a[i]);
+
+		// to inialize suffix array
+		for (int i = n; i >= 1; i--)
+			suf[i] = gcd(a[i], suf[i + 1]);
+
+		while (q--) {
+			int l, r;
+			cin >> l >> r;
+
+			cout << gcd(pre[l - 1], suf[r + 1]) << endl;
+		}
 	}
 
 	return 0;
