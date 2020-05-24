@@ -1,6 +1,3 @@
-// https://www.spoj.com/problems/MPOW/
-
-
 
 /******************************************
 * AUTHOR : Abhishek Naidu *
@@ -13,8 +10,7 @@ using namespace __gnu_pbds;
 using namespace std;
 
 #define all(n)          n.begin(),n.end()
-#define REP(i,n)        for (int i=1; i<=n; i++)
-// #define REP(i,a,b)      for (int i=a; i<=b; i++)
+#define REP(i,a,n)      for (int i=a; i<=n; i++)
 #define N               101
 #define pii             pair<int,int>
 #define vi              vector<int>
@@ -35,10 +31,10 @@ using namespace std;
 #define inf             1e18
 mt19937                 rng(chrono::steady_clock::now().time_since_epoch().count());
 
-int a[N][N] , I[N][N];
-
 typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> pbds;
 
+int a[3];
+int I[3][3], T[3][3];
 
 void abhisheknaiidu()
 {
@@ -49,79 +45,60 @@ void abhisheknaiidu()
 #endif
 }
 
-void mul(int A[][N], int B[][N], int dim) {
+void mul(int A[3][3], int B[3][3], int dim) {
 
 	int res[dim + 1][dim + 1];
 
-	REP(i, dim) {
-		REP(j, dim) {
+	REP(i, 1, dim) {
+		REP(j, 1, dim) {
 			res[i][j] = 0;
-			REP(k, dim) res[i][j] += A[i][k] * B[k][j] % mod;
+			REP(k, 1, dim) {
+				res[i][j] += (A[i][k] * B[k][j]) % mod;
+			}
 		}
 	}
 
-	// But we do need it in res, we need it in I,
-	// which is equal to A[][N] here
-
-	REP(i, dim) REP(j, dim) A[i][j] = res[i][j] % mod;
+	REP(i, 1, dim) REP(j, 1, dim) A[i][j] = res[i][j] % mod;
 }
 
-void power(int A[][N], int dim, int n) {
+int getfib(int n) {
 
-	// Initializing Identity Matrix of
-	// Size dim.
-	REP(i, dim) REP(j, dim)
-	{
-		if ( i == j) I[i][j] = 1;
-		else        I[i][j] = 0;
-	}
+	if (n <= 2) return a[n];
 
-	// This takes time O(M3 * N) => Gives TLE (Naive Approach)
-	// REP(i, n)
-	// // I = I*A,but in matrix, multiply does not work in this way.
-	// mul(I, A, dim);
+	// Initializing the Indentity Matrix
+	I[1][1] = I[2][2] = 1;
+	I[1][2] = I[2][1] = 0;
 
-	// Optimized Approach, TC  => O(M3 * logN)
+	// Initializig the transitive matrix
+	T[1][1] = 0;
+	T[1][2] = T[2][2] = T[2][1] = 1;
+
+	n = n - 1;
+
+	// Calculating T^n-1 in log(n) time
 	while (n) {
 		if (n % 2)
-			mul(I, A, dim), n--;
+			mul(I, T, 2), n--;
 
 		else
-			mul(A, A, dim), n /= 2;
+			mul(T, T, 2), n /= 2;
 	}
 
+	int ans = (a[1] * I[1][1] + a[2] * I[2][1]) % mod;
 
-
-
-	// Now the changes are present in I
-	// but we want it in arr a!
-	REP(i, dim) REP(j, dim) A[i][j] = I[i][j];
-
-}
-
-void printMat(int A[][N], int dim) {
-	REP(i, dim) {
-		REP(j, dim) {
-			cout << A[i][j] % mod << ' ' ;
-		}
-		cout << endl;
-	}
+	return ans;
 }
 
 int32_t main()
 {
 	abhisheknaiidu();
 
+
 	w(x) {
-		int dim, n;
-		cin >> dim >> n;
-
-		REP(i, dim) REP(j, dim) cin >> a[i][j];
-
-		power(a, dim, n);
-		printMat(a, dim);
+		int n;
+		cin >> a[1] >> a[2] >> n, n++;
+		cout << getfib(n) << endl;
 	}
-
 
 	return 0;
 }
