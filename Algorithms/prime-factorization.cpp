@@ -30,7 +30,7 @@ using namespace std;
 mt19937                 rng(chrono::steady_clock::now().time_since_epoch().count());
 
 typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> pbds;
-
+int a[1000001];
 
 void abhisheknaiidu()
 {
@@ -41,13 +41,51 @@ void abhisheknaiidu()
 #endif
 }
 
+// Factorisation in 0(logn) time
+void sieve() {
+	int max = 1000000;
+
+	for (int i = 1; i <= max ; ++i) a[i] = -1;
+
+	for (int i = 2; i <= max ; ++i)
+	{
+		if (a[i] == -1) {
+			for (int j = i; j <= max; j += i)
+			{
+				if (a[j] == -1) a[j] = i;
+			}
+		}
+	}
+}
+
+vi pf(int n) {
+	vi res;
+	while (n != 1) {
+		res.pb(a[n]);
+		n /= a[n];
+	}
+
+	res.pb(1);
+
+	return res;
+}
+
+
 int32_t main()
 {
 	abhisheknaiidu();
-
+	sieve();
 	int n;
 	cin >> n;
 
+	vi p = pf(n);
+
+	for (int i = 0; i < p.size(); ++i)
+	{
+		cout << p[i] << " ";
+	}
+
+	// Normal Factorization in O(sqrt) time
 	// If n is composite number then there will be a
 	// prime number below sqrt(n)
 	for (int i = 2; i * i <= n; ++i)
