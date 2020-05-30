@@ -20,6 +20,7 @@ public:
 // TotalProfit=∑i(height(peaki)−height(valleyi))
 // Peaks and Valleys should be calculated only taking
 // next element as a reference always!
+// Make sure to add valley first then peak to optimise profit
 vi v;
 v = {7, 1, 5, 3, 6, 4};
 int i = 0;
