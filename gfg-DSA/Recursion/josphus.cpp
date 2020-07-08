@@ -10,7 +10,7 @@ int Jos(int n, int k) {
 // Adding 1 in RHS part, to ensure that we are in the same 
 // range of 1-n, and also we are having 1 extra player in
 // previous case.
-return n > 1 ? (josephus(n-1, k) + k - 1) % n + 1 : 1;
+return n > 1 ? (Jos(n-1, k) + k - 1) % n + 1 : 1;
 }
 
 int main() {
