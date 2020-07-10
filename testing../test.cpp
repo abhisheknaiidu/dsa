@@ -1,7 +1,3 @@
-/******************************************
-* AUTHOR : Abhishek Naidu *
-* NICK : abhisheknaiidu *
-******************************************/
 #pragma GCC optimize("Ofast")
 #include <algorithm>
 #include <bitset>
@@ -51,49 +47,20 @@
 #define mp              make_pair
 #define lli             long long int
 #define inf             1e18
-#define w(x)            int x; cin>>x; while(x--)
-#define f(i,a,b) for(i=a;i<b;i++)
-#define fd(i,a,b) for(i=a;i>=b;i--)
-#define out cout<<
-#define in cin>>
 using namespace std;
-
-void abhisheknaiidu()
-{
-	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-#ifndef ONLINE_JUDGE
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
-#endif
-}
 
 
 int main(int argc, char* argv[]) {
-	abhisheknaiidu();
+   ios_base::sync_with_stdio(0); cin.tie(NULL);
+#ifndef ONLINE_JUDGE
+   freopen("input.txt","r",stdin);
+   freopen("output.txt","w",stdout);   
+#endif
 
-w(x) {
+   int a, b, c;
 
-}
-
+   cin >> a >> b >> c ;
+   cout << a << b << c;
+     
    return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
