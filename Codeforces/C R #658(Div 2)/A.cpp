@@ -67,73 +67,59 @@ void abhisheknaiidu()
 #endif
 }
 
-vector <string> tags;
-map <string, string> atr;
-
-
-void insert_atr( string & name, string & value) {
-	string full;
-	for( string & str : tags) {
-		full += str + '.';
-	}
-	full.pop_back();
-	full += '~' + name;
-	atr[full] = value;
-}
 
 int main(int argc, char* argv[]) {
 	abhisheknaiidu();
-	int n, q;
-	string s;
-	cin >> n >> q;
 
+w(x) {
 
+	int n,m,a,b;
+	int ab[1001] = {0};
+	int ba[1001] = {0};
+
+	cin >> n >> m;
 	f(i,0,n) {
-	char c; cin >> c;
-
-	if(cin.peek() == '/') {
-		string end; cin >> end;
-		tags.pop_back();
+		cin >> a;
+		ab[a]++;
 	}
-	else {
-		string tag_name; cin >> tag_name;
-		// cout << tag_name << endl;
 
-		if(tag_name.back() == '>') {
-			tag_name.pop_back();
-			tags.pb(tag_name);
+	vector <int> ans;
+
+	f(i,0,m) {
+		cin >> b;
+		ba[b]++;
+	}
+
+	f(i,0,1001) {
+		if(ab[i] != 0 && ba[i] != 0){
+			ans.pb(i);
+			break;
 		}
-		else {
-			tags.pb(tag_name);
-			for(;;) {
-				string atr_name, atr_value, eq;
-				cin >> atr_name >> eq >> atr_value;
-				if(atr_value.back() == '>') {
-
-				atr_value.pop_back();
-				atr_value.pop_back();
-				atr_value = atr_value.substr(1);
-				insert_atr(atr_name,atr_value);
-				break; 
-				}
-
-				else {
-					atr_value.pop_back();
-					atr_value = atr_value.substr(1);
-					insert_atr(atr_name, atr_value);
-				}
-			}
-		 }
-	  }
 	}
 
+	int len = ans.size();
 
-	f(i,0,q) {
-		string s;
-		cin >> s;
-		if(atr.find(s) != atr.end()) cout << atr[s] << endl;
-		else cout << "Not Found!" << endl;
+	if(!len) cout << "NO" << endl;
+
+	else {
+		cout << "YES" << endl;
+		cout << len << " ";
+
+
+		f(i,0,len) {
+			cout << ans[i] << endl;
+		}
 	}
+	// f(i,0,ans.size()) {
+	// 	cout << ans.size() << " " << ans[i] << endl;
+	// }
+
+	// f(i,0,10) {
+	// 	cout << a[i] << " ";
+	// } 
+
+
+}
 
    return 0;
 }
