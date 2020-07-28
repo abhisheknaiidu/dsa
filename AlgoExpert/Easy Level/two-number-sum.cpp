@@ -67,42 +67,22 @@ void abhisheknaiidu()
 #endif
 }
 
-
-int main(int argc, char* argv[]) {
-	abhisheknaiidu();
-
-	int a[] = { 3,0,1,2,5 };
-	int n = sizeof(a)/sizeof(a[0]);
-	int ans=0;
-	// f(i,1,n) {
-	// 	out a[i] << " " ;
-	// 	if(a[i]<=max) {
-	// 		ans+=max - a[i];
-	// 	}
-	// }
-	// out ans;
-
-	// taking min(max(leftside, rightside))
-	// maintaining 2 arrays
-	int l[n], r[n];
-	l[0] = a[0];
-	f(i,1,n) {
-		l[i] = max(l[i-1], a[i]);
-	}
-	r[n-1] = a[n-1];
-	for(int i=n-2; i>=0; i--){
-		r[i] = max(r[i+1], a[i]);
+	vi twoNumberSum(vi array, int targetSum) {
+		f(i,0,array.size()) {
+			cout << array[i];
+		}
+		return {};
 	}
 
-	f(i,0,n) {
-		out l[i] << " " << r[i] << " " << a[i] << endl;
-		ans += min(l[i], r[i]) - a[i];
-	}
+// int main(int argc, char* argv[]) {
+// 	abhisheknaiidu();
 
-	out ans;
+// 	twoNumberSum();
 
-   return 0;
-}
+
+
+//    return 0;
+// }
 
 
 

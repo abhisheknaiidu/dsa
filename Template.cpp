@@ -45,15 +45,15 @@
 #define setbits(x)      __builtin_popcountll(x)
 #define zrobits(x)      __builtin_ctzll(x)
 #define mod             1000000007
-#define f               first
+#define fi               first
 #define s               second
 #define pb              push_back
 #define mp              make_pair
 #define lli             long long int
 #define inf             1e18
 #define w(x)            int x; cin>>x; while(x--)
-#define f(i,a,b) for(i=a;i<b;i++)
-#define fd(i,a,b) for(i=a;i>=b;i--)
+#define f(i,a,b) for(int i=a;i<b;i++)
+#define fd(i,a,b) for(int i=a;i>=b;i--)
 #define out cout<<
 #define in cin>>
 using namespace std;
