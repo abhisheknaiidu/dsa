@@ -16,7 +16,7 @@
 // Use XOR in the entire array.
 
 // 5- Extension of 4, when 2 numbers occurs in odd times:
-
+// check 2-duplicate.cpp 
 
 // 6- Generate Power Set:
 // i/p = "abc" ,  o/p = ['', 'a', 'b', 'c', 'ab', 'ac', 'bc', 'abc']
