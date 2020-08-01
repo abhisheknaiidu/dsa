@@ -19,6 +19,8 @@ public:
         unsigned int ans=0;
         for(int i=0;i<32;i++){
             if((n & (1<<i))>0){
+            	//If a bit at ith position is set in the i/p no. 
+            	// then set the bit at (31 - i) in o/p
                 ans = ans | (1<<(31-i));
             }
         }
