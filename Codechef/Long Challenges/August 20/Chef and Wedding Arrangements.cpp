@@ -64,30 +64,84 @@ void abhisheknaiidu()
 }
 
 
-
 int main(int argc, char* argv[]) {
 	abhisheknaiidu();
 
 w(x) {
-	// int a;
-	int a[] = {7,2,3};
-	int n = sizeof(a)/ sizeof(a[0]);
-	vector <vector <int>> v(n);
+	lli n,k;
+	in n >> k;
+	vector <lli> v(n);
+	unordered_set<lli> hash;
+	for (lli i = 0; i < n; ++i)
+	{
+		in v[i];
+	}
 
+	unordered_map <lli, lli> m;
 
-  int range = (1 << n);
-    // cout << range << endl;
-  for (int i=1;i<range;i++) {
-    for(int j=0; j<n; j++) {
-      if(i &(1 << j)) {
-        out a[j];
-      }
-    }
-    cout << endl;
-  }
+	lli count = 1;
+	for (lli i = 0; i <v.size(); ++i)
+	{
+		if(hash.find(v[i]) != hash.end()) {
+			count++;
+			// cout << endl;
+			// cout << v[i];
+		}
+		// m[mi].pb(v[i]);
+		else if(hash.find(v[i]) == hash.end()) {
+			hash.insert(v[i]);
+			// cout << v[i];
+		}
+		m[v[i]]++;
+	}
+
+	// cout << m.size();
+
+	lli sum=0;
+	// lli ch=0;
+	bool dup = true;
+	for (auto x: m)
+	{
+		if(x.second > 1) {
+			// ch++;
+			// sum++;
+			sum+=x.second;
+		}
+		else if(x.second == 1) {
+			dup=false;
+		}
+		// cout << x.first << " " << x.second << endl;
+	}
+
+	// cout << ch;
+
+	lli a1 = count*k;
+	lli a2 = k + (dup ? sum - 1 : sum);
+	lli op = min(a1,a2);
+	cout << op << endl;
 
 }
+
 
    return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -63,31 +63,100 @@ void abhisheknaiidu()
 #endif
 }
 
+string Solution(map<char,int> &mp, string p, map<char, int> &ms, string s) {
+	    string ans="";
 
+        for(auto it=ms.begin();it!=ms.end();it++)
+        {
+        	// out it->first << " " << it->second << endl;
+            if(ms.find(p[0]) != ms.end()){
+            while(ms[it->first]>0)
+            {
+                ans+=it->first;
+                ms[it->first]--;
+               // out it->first << ms[it->first] << endl;
+
+            }
+
+            // out ans << endl;
+ 
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        // if(p[0]<p[1]){
+        // while(ms[p[0]]>0)
+        //   {
+        //     ans+=p[0];
+        //     ms[p[0]]--;
+        //   }
+        // }
+        // cout<<ans << endl;
+ 
+        ans+=p;
+        // cout << ans << endl;
+        for(auto it=ms.begin();it!=ms.end();it++)
+        {
+            while(ms[it->first]>0){
+               // cout << it->first << " " << it->second << endl;
+               ans+=it->first;
+               ms[it->first]--;}
+        }
+        // cout<<ans.length()<<endl;
+
+        return ans;
+}
 
 int main(int argc, char* argv[]) {
 	abhisheknaiidu();
 
 w(x) {
-	// int a;
-	int a[] = {7,2,3};
-	int n = sizeof(a)/ sizeof(a[0]);
-	vector <vector <int>> v(n);
+	    string s,p;
+        cin>>s;
+        cin>>p;
 
 
-  int range = (1 << n);
-    // cout << range << endl;
-  for (int i=1;i<range;i++) {
-    for(int j=0; j<n; j++) {
-      if(i &(1 << j)) {
-        out a[j];
-      }
-    }
-    cout << endl;
-  }
+
+        transform(s.begin(), s.end(), s.begin(), ::tolower); 
+        transform(p.begin(), p.end(), p.begin(), ::tolower); 
+        map<char,int> ms;
+        map<char,int> mp;
+        for(int i=0;i<s.length();i++)
+          ms[s[i]]++;
+        for(int i=0;i<p.length();i++)
+          mp[p[i]]++;
+        for(auto it=mp.begin();it!=mp.end();it++)
+        {
+            ms[it->first]-=it->second;
+            // cout << ms[it->first] << endl;
+        }
+
+        cout << Solution(mp,p,ms,s) << endl;
 
 }
 
    return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
