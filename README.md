@@ -4,14 +4,10 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, and Other Cod
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 33
-
- 🟡 Medium: 12
-
- 🔴 Hard:0
-
- ⚫️ Very Hard: 0
-
+ 🟢 Easy: 33    
+ 🟡 Medium: 12    
+ 🔴 Hard:0    
+ ⚫️ Very Hard: 0   
  🌟 Good to review
 
  __Total__ - 45
@@ -48,15 +44,15 @@ Adding solutions to all problems I have completed today
 __Focus for today:__ Arrays, Strings
 
 #### LeetCode
- 41.🟢 [Remove Duplicates from Sorted Array]()       
- 42.🟢 [Rotate Array]()    
- 43.🟢 [Reverse String]()
+ 41. 🟢 [Remove Duplicates from Sorted Array]()       
+ 42. 🟢 [Rotate Array]()    
+ 43. 🟢 [Reverse String]()
 
 #### AlgoExpert
- 44.🟢 [Palindrome Check]()
+ 44. 🟢 [Palindrome Check]()
 
  #### Educative
   - [Sliding Window Technique]()
 
- 45.🟢 Average Medians
+ 45. 🟢 Average Medians
 
