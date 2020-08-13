@@ -20,8 +20,6 @@ __Difficulty Levels solved :__
 
 <a href="https://github.com/abhisheknaiidu/dsa/stargazers"><img src="https://img.shields.io/github/stars/abhisheknaiidu/dsa" alt="Stars Badge"/></a>
 <a href="https://github.com/abhisheknaiidu/dsa/network/members"><img src="https://img.shields.io/github/forks/abhisheknaiidu/dsa" alt="Forks Badge"/></a>
-<a href="https://github.com/abhisheknaiidu/dsa/pulls"><img src="https://img.shields.io/github/issues-pr/abhisheknaiidu/dsa" alt="Pull Requests Badge"/></a>
-<a href="https://github.com/abhisheknaiidu/dsa/issues"><img src="https://img.shields.io/github/issues/abhisheknaiidu/dsa" alt="Issues Badge"/></a>
 <a href="https://github.com/abhisheknaiidu/dsa"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/abhisheknaiidu/dsa?color=2b9348"></a>
 <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/blob/master/LICENSE"><img src="https://img.shields.io/github/license/abhisheknaiidu/dsa?color=2b9348" alt="License Badge"/></a>
 <a href="https://leetcode.com/abhisheknaiidu/"><img src="https://lc.coding.gs/v1/solved/abhisheknaiidu.svg?color=red&logo=leetcode"></a>
