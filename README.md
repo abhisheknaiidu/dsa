@@ -48,15 +48,15 @@ Adding solutions to all problems I have completed today
 __Focus for today:__ Arrays, Strings
 
 #### LeetCode
- 1.🟢 [Remove Duplicates from Sorted Array]()
- 2.🟢 [Rotate Array]()
- 3.🟢 [Reverse String]()
+ 41.🟢 [Remove Duplicates from Sorted Array]()       
+ 42.🟢 [Rotate Array]()    
+ 43.🟢 [Reverse String]()
 
 #### AlgoExpert
- 1.🟢 [Palindrome Check]()
+ 44.🟢 [Palindrome Check]()
 
  #### Educative
   - [Sliding Window Technique]()
-  
- 1.🟢 Average Medians
+
+ 45.🟢 Average Medians
 
