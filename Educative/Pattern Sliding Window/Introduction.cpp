@@ -42,14 +42,16 @@ int main(int argc, char* argv[]) {
     int k=5;
 
 
-	vector <double> res(n-k+1);
+	vector <double> res;
 
 	int i=0;
 	double sum=0;
 	for(int j=0; j<n; j++) {
 		sum+=v[j];
 		if(j>=k-1) {
-			res[i] = (sum/5);
+			res.push_back(sum/5);
+			// or
+			// res[i] = (sum/5);
 			sum = sum - v[i];
 			i++;
 		}

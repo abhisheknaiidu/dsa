@@ -4,7 +4,7 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, and Other Cod
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 28
+ 🟢 Easy: 33
 
  🟡 Medium: 12
 
@@ -14,7 +14,7 @@ __Difficulty Levels solved :__
 
  🌟 Good to review
 
- __Total__ - 40
+ __Total__ - 45
 
 <div align="center">
 
@@ -45,4 +45,18 @@ __Focus for today:__ Heaps/Priority Queues
 ## Day 0
 Adding solutions to all problems I have completed today
 
+__Focus for today:__ Arrays, Strings
+
+#### LeetCode
+ 1.🟢 [Remove Duplicates from Sorted Array]()
+ 2.🟢 [Rotate Array]()
+ 3.🟢 [Reverse String]()
+
+#### AlgoExpert
+ 1.🟢 [Palindrome Check]()
+
+ #### Educative
+  - [Sliding Window Technique]()
+  
+ 1.🟢 Average Medians
 
