@@ -30,7 +30,7 @@ __Difficulty Levels solved :__
 __Focus for today:__ Heaps/Priority Queues
 
 #### LeetCode
-* 🟢
+* 🟢 _Notes: Unordered Maps!_
 
 #### AlgoExpert
 * 🟡 
@@ -43,15 +43,15 @@ Adding solutions to all problems I have completed today
 __Focus for today:__ Arrays, Strings
 
 #### LeetCode
- 41. 🟢 [Remove Duplicates from Sorted Array](https://github.com/abhisheknaiidu/dsa/blob/master/Leetcode/Problems/Easy/Remove%20Duplicates%20from%20Sorted%20Array.cpp)       
- 42. 🟢 [Rotate Array](https://github.com/abhisheknaiidu/dsa/blob/master/Leetcode/Problems/Easy/Rotate%20Array.cpp)    
- 43. 🟢 [Reverse String](https://github.com/abhisheknaiidu/dsa/blob/master/Leetcode/Problems/Easy/Reverse%20String.cpp)
+ 41. 🟢 [Remove Duplicates from Sorted Array](LeetCode/Problems/Easy/remove-duplicates-from-sorted-array.cpp)   _Notes: Unordered Maps!_    
+ 42. 🟢 [Rotate Array](LeetCode/Problems/Easy/rotate-array.cpp)   _Notes: Recursion or (i+k)%n Index!_ 
+ 43. 🟢 [Reverse String](LeetCode/Problems/Easy/reverse-string.cpp)  _Notes: Recursion!_
 
 #### AlgoExpert
- 44. 🟢 [Palindrome Check]()
+ 44. 🟢 [Palindrome Check](AlgoExpert/Easy/pallindrome-check.cpp)  _Notes: 2 Pointer's (Best)!_
 
  #### Educative
-  - [Sliding Window Technique](https://github.com/abhisheknaiidu/dsa/tree/master/Educative/Pattern%20Sliding%20Window)
+  - [Sliding Window Technique](Educative/pattern-sliding-window)
 
- 45. 🟢 [Average of all contiguous subarrays of size ‘K’](https://github.com/abhisheknaiidu/dsa/blob/master/Educative/Pattern%20Sliding%20Window/Introduction.cpp)
+ 45. 🟢 [Average of all contiguous subarrays of size ‘K’](Educative/pattern-sliding-window/introduction.cpp)
 
