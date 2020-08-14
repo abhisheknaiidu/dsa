@@ -12,7 +12,7 @@
 
 </div>
 
-My solutions to coding interview problems on LeetCode, AlgoExpert, and Other Coding Sites. I will be adding my solutions to this repository every day starting from 13th Aug Seriously 😅.
+My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and Other Coding Sites. I will be adding my solutions to this repository every day starting from 13th Aug Seriously 😅.
 
 __Difficulty Levels solved :__
  
@@ -53,5 +53,5 @@ __Focus for today:__ Arrays, Strings
  #### Educative
   - [Sliding Window Technique]()
 
- 45. 🟢 Average Medians
+ 45. 🟢 [Average Medians]()
 
