@@ -43,9 +43,9 @@ Adding solutions to all problems I have completed today
 __Focus for today:__ Arrays, Strings
 
 #### LeetCode
- 41. 🟢 [Remove Duplicates from Sorted Array](LeetCode/Problems/Easy/remove-duplicates-from-sorted-array.cpp)   _Notes: Unordered Maps!_    
- 42. 🟢 [Rotate Array](LeetCode/Problems/Easy/rotate-array.cpp)   _Notes: Recursion or (i+k)%n Index!_ 
- 43. 🟢 [Reverse String](LeetCode/Problems/Easy/reverse-string.cpp)  _Notes: Recursion!_
+ 41. 🟢 [Remove Duplicates from Sorted Array](Leetcode/Problems/Easy/remove-duplicates-from-sorted-array.cpp)   _Notes: Unordered Maps!_    
+ 42. 🟢 [Rotate Array](Leetcode/Problems/Easy/rotate-array.cpp)   _Notes: Recursion or (i+k)%n Index!_ 
+ 43. 🟢 [Reverse String](Leetcode/Problems/Easy/reverse-string.cpp)  _Notes: Recursion!_
 
 #### AlgoExpert
  44. 🟢 [Palindrome Check](AlgoExpert/Easy/pallindrome-check.cpp)  _Notes: 2 Pointer's (Best)!_
