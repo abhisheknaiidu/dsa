@@ -59,6 +59,10 @@ __Focus for today:__ Arrays, Strings
 ## Day 1
 __Focus for today:__ STL/ Linked Lists
 
+#### LeetCode
+ 41. 🟢 [Delete Node in a Linked List](Leetcode/Problems/Easy/delete-node-in-linked-list.cpp)   _Notes: free(temp) doesn't works!_    
+
+
 #### AlgoExpert
  46. 🟢 [Linked List Construction](AlgoExpert/Easy/linked-list-construction.cpp) _Notes: Nothing 😆_
  
