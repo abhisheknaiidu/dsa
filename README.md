@@ -16,13 +16,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 35    
+ 🟢 Easy: 36    
  🟡 Medium: 13   
  🔴 Hard:0    
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 48
+ __Total__ - 49
 
 <!-- Template for each day
 
@@ -51,7 +51,7 @@ __Focus for today:__ Arrays, Strings
  44. 🟢 [Palindrome Check](AlgoExpert/Easy/pallindrome-check.cpp)  _Notes: 2 Pointer's (Best)!_
 
  #### Educative
-  - [Sliding Window Technique](Educative/pattern-sliding-window)
+   [Sliding Window Technique Pattern](Educative/pattern-sliding-window)
 
  45. 🟢 [Average of all contiguous subarrays of size ‘K’](Educative/pattern-sliding-window/introduction.cpp)
 
@@ -60,13 +60,13 @@ __Focus for today:__ Arrays, Strings
 __Focus for today:__ STL/ Linked Lists
 
 #### AlgoExpert
- 44. 🟢 [Linked List Construction](AlgoExpert/Easy/linked-list-construction.cpp) _Notes: Nothing 😆_
+ 46. 🟢 [Linked List Construction](AlgoExpert/Easy/linked-list-construction.cpp) _Notes: Nothing 😆_
  
 #### Educative
-  - [Sliding Window Technique](Educative/pattern-sliding-window) _Notes: Mostly use HashMaps or HashSets!_
+   [Sliding Window Technique Pattern](Educative/pattern-sliding-window)   _Notes: Mostly use HashMaps or HashSets!_
 
-46. 🟡[Longest Substring with K Distinct Characters](Educative/pattern-sliding-window/longest-substring-with-k-distinct-characters.cpp) 
-47. 🟢[Maximum Sum Subarray of Size K](Educative/pattern-sliding-window/max-sum-subarray.cpp)
-48. 🟢[Smallest Subarray with a given sum](Educative/pattern-sliding-window/smallest-subarray-with-a-given-sum.cpp)
+47. 🟡 [Longest Substring with K Distinct Characters](Educative/pattern-sliding-window/longest-substring-with-k-distinct-characters.cpp) 
+48. 🟢 [Maximum Sum Subarray of Size K](Educative/pattern-sliding-window/max-sum-subarray.cpp)
+49. 🟢 [Smallest Subarray with a given sum](Educative/pattern-sliding-window/smallest-subarray-with-a-given-sum.cpp)
 
 
