@@ -73,4 +73,8 @@ __Focus for today:__ STL/ Linked Lists
 48. 🟢 [Maximum Sum Subarray of Size K](Educative/pattern-sliding-window/max-sum-subarray.cpp)
 49. 🟢 [Smallest Subarray with a given sum](Educative/pattern-sliding-window/smallest-subarray-with-a-given-sum.cpp)
 
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+_Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
+
 
