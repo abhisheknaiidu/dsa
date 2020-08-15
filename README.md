@@ -16,13 +16,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 33    
- 🟡 Medium: 12    
+ 🟢 Easy: 35    
+ 🟡 Medium: 13   
  🔴 Hard:0    
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 45
+ __Total__ - 48
 
 <!-- Template for each day
 
@@ -43,7 +43,7 @@ Adding solutions to all problems I have completed today
 __Focus for today:__ Arrays, Strings
 
 #### LeetCode
- 41. 🟢 [Remove Duplicates from Sorted Array](Leetcode/Problems/Easy/remove-duplicates-from-sorted-array.cpp)   _Notes: Unordered Maps!_    
+ 41. 🟢 [Remove Duplicates from Sorted Array](Leetcode/Problems/Easy/remove-duplicates-from-sorted-array.cpp)   _Notes: Use Hash Map!_    
  42. 🟢 [Rotate Array](Leetcode/Problems/Easy/rotate-array.cpp)   _Notes: Recursion or (i+k)%n Index!_ 
  43. 🟢 [Reverse String](Leetcode/Problems/Easy/reverse-string.cpp)  _Notes: Recursion!_
 
@@ -54,4 +54,19 @@ __Focus for today:__ Arrays, Strings
   - [Sliding Window Technique](Educative/pattern-sliding-window)
 
  45. 🟢 [Average of all contiguous subarrays of size ‘K’](Educative/pattern-sliding-window/introduction.cpp)
+
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 1
+__Focus for today:__ STL/ Linked Lists
+
+#### AlgoExpert
+ 44. 🟢 [Linked List Construction](AlgoExpert/Easy/linked-list-construction.cpp) _Notes: Nothing 😆_
+ 
+#### Educative
+  - [Sliding Window Technique](Educative/pattern-sliding-window) _Notes: Mostly use HashMaps or HashSets!_
+
+46. 🟡[Longest Substring with K Distinct Characters](Educative/pattern-sliding-window/longest-substring-with-k-distinct-characters.cpp) 
+47. 🟢[Maximum Sum Subarray of Size K](Educative/pattern-sliding-window/max-sum-subarray.cpp)
+48. 🟢[Smallest Subarray with a given sum](Educative/pattern-sliding-window/smallest-subarray-with-a-given-sum.cpp)
+
 
