@@ -16,13 +16,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 38    
+ 🟢 Easy: 40    
  🟡 Medium: 15  
  🔴 Hard:0    
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 53
+ __Total__ - 55
 
 <!-- Template for each day
 
@@ -79,9 +79,18 @@ __Focus for today:__ STL/ Linked Lists
 __Focus for today:__ Linked Lists/Contest
 
 #### LeetCode
- 52. 🟡 [Minimum Operations to Make Array Equal](Leetcode/Contests/Weekly/202/three-conseqecutive-odd.cpp) _Notes: Average_
+ 52. 🟡 [Minimum Operations to Make Array Equal](Leetcode/Contests/Weekly/202/three-conseqecutive-odd.cpp) _Notes: take average_
  53. 🟢 [Three Consecutive Odds](Leetcode/Contests/Weekly/202/min-operation-array-eq.cpp)   _Notes: CakeWalk!_    
  54. 🟢 [Reverse Linked List](Leetcode/Problems/Easy/reverse-linklist.cpp)
+
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 3
+__Focus for today:__ Linked Lists
+
+#### LeetCode
+ 55. 🟢 [Linked List Cycle](Leetcode/Problems/Easy/linked-list-cycle.cpp) _Notes: unordered_set or 2 pointers_
+
+
 
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
