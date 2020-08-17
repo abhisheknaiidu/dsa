@@ -16,13 +16,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 40    
+ 🟢 Easy: 41    
  🟡 Medium: 15  
  🔴 Hard:0    
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 55
+ __Total__ - 56
 
 <!-- Template for each day
 
@@ -88,7 +88,8 @@ __Focus for today:__ Linked Lists/Contest
 __Focus for today:__ Linked Lists
 
 #### LeetCode
- 55. 🟢 [Linked List Cycle](Leetcode/Problems/Easy/linked-list-cycle.cpp) _Notes: unordered_set or 2 pointers_
+ 55. 🟢 [Linked List Cycle](Leetcode/Problems/Easy/linked-list-cycle.cpp) _Notes: unordered set or 2 pointers_
+ 56. 🟢 [Palindrome Linked List](Leetcode/Problems/Easy/palindrome-linked-list.cpp) _Notes: divide into 2 equal parts and use 2 pointers_
 
 
 
