@@ -60,7 +60,7 @@ __Focus for today:__ Arrays, Strings
 __Focus for today:__ STL/ Linked Lists
 
 #### LeetCode
- 46. 🟡 [Remove Nth Node From End of List](Leetcode/Problems/Medium/remove-nth-node-from-end.cpp) _Notes: 🌟_
+ 46. 🟡 [Remove Nth Node From End of List](Leetcode/Problems/Medium/remove-nth-node-from-end.cpp) _Notes: 🌟 use fast and slow pointer's_
  47. 🟢 [Delete Node in a Linked List](Leetcode/Problems/Easy/delete-node-in-linked-list.cpp)   _Notes: free(temp) doesn't works!_    
 
 
@@ -81,7 +81,7 @@ __Focus for today:__ Linked Lists/Contest
 #### LeetCode
  52. 🟡 [Minimum Operations to Make Array Equal](Leetcode/Contests/Weekly/202/three-conseqecutive-odd.cpp) _Notes: Average_
  53. 🟢 [Three Consecutive Odds](Leetcode/Contests/Weekly/202/min-operation-array-eq.cpp)   _Notes: CakeWalk!_    
-
+ 54. 🟢 [Reverse Linked List](Leetcode/Problems/Easy/reverse-linklist.cpp)
 
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
