@@ -16,13 +16,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 41    
- 🟡 Medium: 15  
- 🔴 Hard:0    
+ 🟢 Easy: 40    
+ 🟡 Medium: 16  
+ 🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 56
+ __Total__ - 57
 
 <!-- Template for each day
 
@@ -65,7 +65,7 @@ __Focus for today:__ STL/ Linked Lists
 
 
 #### AlgoExpert
- 48. 🟢 [Linked List Construction](AlgoExpert/Easy/linked-list-construction.cpp) _Notes: Nothing 😆_
+ 48. 🟡 [Linked List Construction](AlgoExpert/Medium/linked-list-construction.cpp) _Notes: Nothing 😆_
  
 #### Educative
    [Sliding Window Technique Pattern](Educative/pattern-sliding-window)   _Notes: Mostly use HashMaps or HashSets!_
@@ -92,6 +92,8 @@ __Focus for today:__ Linked Lists
  56. 🟢 [Palindrome Linked List](Leetcode/Problems/Easy/palindrome-linked-list.cpp) _Notes: divide into 2 equal parts and use 2 pointers_
 
 
+#### AlgoExpert
+ 57. 🔴 [Merge Linked Lists](AlgoExpert/hard/merge-linked-list.cpp) _Notes: 3 pointers_
 
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
