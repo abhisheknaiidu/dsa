@@ -17,12 +17,12 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 __Difficulty Levels solved :__
  
  🟢 Easy: 40    
- 🟡 Medium: 16  
+ 🟡 Medium: 18  
  🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 57
+ __Total__ - 59
 
 <!-- Template for each day
 
@@ -80,7 +80,7 @@ __Focus for today:__ Linked Lists/Contest
 
 #### LeetCode
  52. 🟡 [Minimum Operations to Make Array Equal](Leetcode/Contests/Weekly/202/three-conseqecutive-odd.cpp) _Notes: take average_
- 53. 🟢 [Three Consecutive Odds](Leetcode/Contests/Weekly/202/min-operation-array-eq.cpp)   _Notes: CakeWalk!_    
+ 53. 🟢 [Three Consecutive Odds](Leetcode/Contests/Weekly/202/min-operation-array-eq.cpp)   _Notes: cakeWalk!_    
  54. 🟢 [Reverse Linked List](Leetcode/Problems/Easy/reverse-linklist.cpp)
 
 <!-- --------------------------------------------------------------------------------------------------------------------- -->
@@ -93,7 +93,18 @@ __Focus for today:__ Linked Lists
 
 
 #### AlgoExpert
- 57. 🔴 [Merge Linked Lists](AlgoExpert/hard/merge-linked-list.cpp) _Notes: 3 pointers_
+ 57. 🔴 [Merge Linked Lists](AlgoExpert/hard/merge-linked-list.cpp) _Notes: 🌟 3 pointers_
+
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 4
+__Focus for today:__ Trees
+
+#### LeetCode
+ 58. 🟡 [Binary Tree Inorder Traversal](Leetcode/Problems/Medium/bt-inorder-traversal.cpp) _Notes:🌟 use stack_
+
+#### AlgoExpert
+ 59. 🟡 [BST Construction](AlgoExpert/Medium/bst-constuction.cpp) _Notes: 🌟 basics_
+
 
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
