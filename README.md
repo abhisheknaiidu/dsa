@@ -17,12 +17,12 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 __Difficulty Levels solved :__
  
  🟢 Easy: 41    
- 🟡 Medium: 20  
+ 🟡 Medium: 21  
  🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 62
+ __Total__ - 63
 
 <!-- Template for each day
 
@@ -108,6 +108,12 @@ __Focus for today:__ Trees
 #### AlgoExpert
  62. 🟡 [BST Construction](AlgoExpert/Medium/bst-constuction.cpp) _Notes: 🌟 basics_
 
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 5
+__Focus for today:__ Trees
+
+#### LeetCode
+ 63. 🟡 [Binary Tree Level Order Traversal](Leetcode/Problems/Medium/binary-level-order.cpp) _Notes:🌟 use queue_
 
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
