@@ -48,7 +48,7 @@ int findClosestValueInBst(BST *tree, int target) {
 
 int findClosestValueInBstHelper(BST *tree, int target, double closest) {
 	BST *curr = tree;
-	while(root!= NULL) {
+	while(curr!= NULL) {
 		if(abs(target - closest) > abs(target - curr->value)) {
 			closest = tree->value;
 		}
