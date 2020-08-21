@@ -16,13 +16,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 41    
+ 🟢 Easy: 42   
  🟡 Medium: 21  
  🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 63
+ __Total__ - 64
 
 <!-- Template for each day
 
@@ -114,7 +114,7 @@ __Focus for today:__ Trees
 
 #### LeetCode
  63. 🟡 [Binary Tree Level Order Traversal](Leetcode/Problems/Medium/binary-level-order.cpp) _Notes:🌟 use queue_
-
+ 64. 🟢 [Convert Sorted Array to Binary Search Tree](Leetcode/Problems/Easy/sorted-to-bst.cpp) _Notes: 🌟binary search_
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
 
