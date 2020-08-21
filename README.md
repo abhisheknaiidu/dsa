@@ -116,6 +116,9 @@ __Focus for today:__ Trees
  63. 🟡 [Binary Tree Level Order Traversal](Leetcode/Problems/Medium/binary-level-order.cpp) _Notes:🌟 use queue_
  64. 🟢 [Convert Sorted Array to Binary Search Tree](Leetcode/Problems/Easy/sorted-to-bst.cpp) _Notes: 🌟binary search_
 
+#### AlgoExpert
+ 65. 🟢 [Find Closest Value in BST](AlgoExpert/Easy/closest-val-bst.cpp) _Notes: helper function_
+
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
 
 
