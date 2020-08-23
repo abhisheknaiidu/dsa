@@ -16,13 +16,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 45   
+ 🟢 Easy: 46   
  🟡 Medium: 21  
  🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 67
+ __Total__ - 68
 
 <!-- Template for each day
 
@@ -126,6 +126,7 @@ __Focus for today:__ Trees
 
 #### LeetCode
  67. 🟢 [Invert Binary Tree](Leetcode/Problems/Easy/invert-binary-tree.cpp) _Notes: 🌟 queue/recursion_
+ 68. 🟢 [Thousand Seperator](Leetcode/Problems/Easy/thousand-separator.cpp) _Notes: Brute-Force_
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
 
