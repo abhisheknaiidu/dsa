@@ -17,12 +17,12 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 __Difficulty Levels solved :__
  
  🟢 Easy: 49   
- 🟡 Medium: 23  
+ 🟡 Medium: 24  
  🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 73
+ __Total__ - 74
 
 <!-- Template for each day
 
@@ -142,7 +142,8 @@ __Focus for today:__ Trees
 
 #### LeetCode
  72. 🟡 [Check Completeness of a Binary Tree](Leetcode/Problems/Medium/completeness-bt.cpp) _Notes: 🌟use flag_
- 73. 🟢 [Symmetric Tree](Leetcode/Problems/Easy/tree-symmetric.cpp) _Notes: recursion(best)_
+ 73. 🟡 [Sum Root to Leaf Numbers](Leetcode/Problems/Medium/sum-root.cpp) _Notes: recursion_
+ 74. 🟢 [Symmetric Tree](Leetcode/Problems/Easy/tree-symmetric.cpp) _Notes: recursion(best)_
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
 
