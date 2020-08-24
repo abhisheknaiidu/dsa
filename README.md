@@ -17,12 +17,12 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 __Difficulty Levels solved :__
  
  🟢 Easy: 49   
- 🟡 Medium: 22  
+ 🟡 Medium: 23  
  🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 72
+ __Total__ - 73
 
 <!-- Template for each day
 
@@ -137,11 +137,12 @@ __Focus for today:__ Contest
  70. 🟢 [Most Visited Sector in a Circular Track](Leetcode/Contests/Weekly/203/most-visited-sector.cpp) _Notes: circular => f = f%n_
  71. 🟡 [Maximum Number of Coins You Can Get](Leetcode/Contests/Weekly/203/max-coins.cpp) _Notes: reverse and give you first_
 
-## Day 7
+## Day 8
 __Focus for today:__ Trees
 
 #### LeetCode
- 72. 🟢 [Symmetric Tree](Leetcode/Problems/Easy/tree-symmetric.cpp) _Notes: recursion(best)_
+ 72. 🟡 [Check Completeness of a Binary Tree](Leetcode/Problems/Medium/completeness-bt.cpp) _Notes: 🌟use flag_
+ 73. 🟢 [Symmetric Tree](Leetcode/Problems/Easy/tree-symmetric.cpp) _Notes: recursion(best)_
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
 
