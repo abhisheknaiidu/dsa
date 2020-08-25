@@ -40,19 +40,20 @@ TreeNode* GetNewNode(int val) {
     return newNode; // address of newNode
 }
 
-void calSum(TreeNode* root, int &res, int x){
-	if(root == NULL) return ;
+int calSum(TreeNode* root, int &res, int x){
+	if(root == NULL) return 0 ;
 	int cur = x*10 + root->val;
 
 	if(root->left == NULL && root->right == NULL) {
 		res += cur;
-		return;
+		cout << res << " ";
+		// return;
 	}
 
 	calSum(root->left, res, cur);
 	calSum(root->right, res, cur);
 
-	// return res;
+	return res;
 }
 
 int main(int argc, char* argv[]) {
@@ -67,8 +68,9 @@ int main(int argc, char* argv[]) {
 	root->right->right = GetNewNode(9);
 	int res = 0;
 	int x = 0;
-	calSum(root, res, x);
+	int a = calSum(root, res, x);
 
+	cout << a << endl;
 	cout << res;
    return 0;
 }
