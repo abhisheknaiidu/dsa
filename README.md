@@ -17,12 +17,12 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 __Difficulty Levels solved :__
  
  🟢 Easy: 50    
- 🟡 Medium: 24  
+ 🟡 Medium: 26  
  🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 75
+ __Total__ - 77
 
 <!-- Template for each day
 
@@ -149,10 +149,14 @@ __Focus for today:__ Trees
 ## Day 9
 __Focus for today:__ Trees
 
+#### LeetCode
+ 75. 🟡 [Path Sum II](Leetcode/Problems/Medium/path-sum-2.cpp) _Notes: 
+
 #### Educative
    [Depth First Search Pattern](Educative/dfs)
 
- 75. 🟢 [Binary Tree Path Sum](Educative/dfs/binary-tree-path-sum.cpp) 
+ 76. 🟢 [Binary Tree Path Sum](Educative/dfs/binary-tree-path-sum.cpp) 
+ 77. 🟡 [All Paths for a Sum](Educative/dfs/all-paths-sum.cpp) 
 
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
