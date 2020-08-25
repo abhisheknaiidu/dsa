@@ -150,7 +150,7 @@ __Focus for today:__ Trees
 __Focus for today:__ Trees
 
 #### LeetCode
- 75. 🟡 [Path Sum II](Leetcode/Problems/Medium/path-sum-2.cpp) _Notes: 
+ 75. 🟡 [Path Sum II](Leetcode/Problems/Medium/path-sum-2.cpp) _Notes: careful of callstack_
 
 #### Educative
    [Depth First Search Pattern](Educative/dfs)
