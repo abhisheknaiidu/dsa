@@ -55,7 +55,7 @@ void find(TreeNode* root, int sum, vector<vector<int>> &allpaths, vector<int> &c
 		find(root->left, sum - root->val, allpaths, cur);
 		find(root->right, sum - root->val, allpaths, cur);
 	}
-	cur.pop_back();
+	cur.pop_back(); // As each recursive call returns, value gets popped!!
 }
 
 vector<vector <int>> hasPath(TreeNode* root, int sum) {
