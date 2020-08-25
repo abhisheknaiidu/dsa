@@ -24,6 +24,11 @@ void abhisheknaiidu()
 #endif
 }
 
+// The time complexity of the above algorithm is O(N^2), where ‘N’ is the total number of
+// nodes in the tree. This is due to the fact that we traverse each node once (which will take O(N), 
+// and for every leaf node we might have to store its path which will take O(N).
+// Space-Complexity - O(NLog(N))
+
 struct TreeNode
 	{
 		int val;
@@ -55,7 +60,7 @@ void find(TreeNode* root, int sum, vector<vector<int>> &allpaths, vector<int> &c
 		find(root->left, sum - root->val, allpaths, cur);
 		find(root->right, sum - root->val, allpaths, cur);
 	}
-	cur.pop_back(); // As each recursive call returns, value gets popped!!
+	cur.pop_back(); // As each recursive call returns, value gets popped!! (Back Tracking)
 }
 
 vector<vector <int>> hasPath(TreeNode* root, int sum) {
