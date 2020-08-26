@@ -163,6 +163,7 @@ __Focus for today:__ Trees
  ## Day 10
 __Focus for today:__ Trees
 
+#### Educative
    [Depth First Search Pattern](Educative/dfs)
 
  80. 🟡 [Path With Given Sequence](Educative/dfs/find-seq.cpp)
