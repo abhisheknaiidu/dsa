@@ -1,20 +1,22 @@
 #include <iostream>
 #include <list>
+#include <vector>
 using namespace std;
 
-//Ajd list implemenattion for integer nodes.
+//Adj list implemenattion for integer nodes.
 class Graph {
     int V;
     // Storing dyanamic Array =? Array of ll of size V, V LL's are there
     // we cannot initialiaze here, we need to construct constructor here!
     // <list> <int> *a = new list <int> [V];
     
-    list <int> *adjList;
+    vector <int> *adjList;
+    // It's nothing but => list <int> *adjList = new list<int> [V];
 
 public:
     Graph(int v) {
         V = v;
-        adjList = new list<int> [V];
+        adjList = new vector<int> [V];
     }
     
     void addEdge(int u, int v, bool bidir = true) {
