@@ -17,12 +17,12 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 __Difficulty Levels solved :__
  
  🟢 Easy: 52    
- 🟡 Medium: 31  
+ 🟡 Medium: 32  
  🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 84
+ __Total__ - 85
 
 <!-- Template for each day
 
@@ -174,10 +174,16 @@ __Focus for today:__ Graphs
 
 #### LeetCode
  82. 🟡 [Number of Connected Components in an Undirected Graph](Leetcode/Problems/Medium/connected-connections.cpp) _Notes: dfs pattern_
- 83. 🟡 [Number of Islands](Leetcode/Problems/Medium/number-of-islands.cpp)
+ 83. 🟡 [Number of Islands](Leetcode/Problems/Medium/number-of-islands.cpp) _Notes: dfs in all 4 dirs_
 
 #### AlgoExpert
  84. 🟢 [Depth First Search](AlgoExpert/Easy/dfs.cpp) _Notes: helper recursive function_
+
+  ## Day 11
+__Focus for today:__ Algorithms
+
+#### AlgoExpert
+ 85. 🟡 [Kadane's Algorithm](AlgoExpert/Medium/kadane-algo.cpp) _Notes: used for finding maxSubArray_
 
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
