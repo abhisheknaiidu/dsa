@@ -30,3 +30,7 @@ public:
 	// }
     // or count += (num == candidate) ? 1 : -1;
 	// return majority;
+
+/// If the elements are sorted in monotonically increasing 
+// or decreasing) order, the majority element can be found at index ⌊n/2⌋and ⌊n/2⌋+1, 
+// incidentally, if nnn is even).
