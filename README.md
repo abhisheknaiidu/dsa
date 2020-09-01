@@ -16,13 +16,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 54    
+ 🟢 Easy: 55    
  🟡 Medium: 33  
  🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 88
+ __Total__ - 89
 
 <!-- Template for each day
 
@@ -190,6 +190,11 @@ __Focus for today:__ Algorithms
  87. 🟡 [Kadane's Algorithm](AlgoExpert/Medium/kadane-algo.cpp) _Notes: used for finding maxSubArray_
  88. 🟢 [Nth Fibonacci](AlgoExpert/Easy/nth-fib.cpp) _Notes: Iterative method best among all!_
 
+  ## Day 12
+__Focus for today:__ Everything
+#### LeetCode
+ 89. 🟢 [Majority Element](Leetcode/Problems/Easy/majority-element.cpp) _Notes: Moore's Voting Algorithm_
+ 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
 
 
