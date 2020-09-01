@@ -17,12 +17,12 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 __Difficulty Levels solved :__
  
  🟢 Easy: 52    
- 🟡 Medium: 32  
+ 🟡 Medium: 33  
  🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 85
+ __Total__ - 86
 
 <!-- Template for each day
 
@@ -182,8 +182,11 @@ __Focus for today:__ Graphs
   ## Day 11
 __Focus for today:__ Algorithms
 
+#### LeetCode
+ 85. 🟡 [Maximum Length of Subarray With Positive Product](Leetcode/Contests/Weekly/204/max-subarray-product.cpp) _Notes: 🌟🌟careful of zeroes_
+
 #### AlgoExpert
- 85. 🟡 [Kadane's Algorithm](AlgoExpert/Medium/kadane-algo.cpp) _Notes: used for finding maxSubArray_
+ 86. 🟡 [Kadane's Algorithm](AlgoExpert/Medium/kadane-algo.cpp) _Notes: used for finding maxSubArray_
 
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
