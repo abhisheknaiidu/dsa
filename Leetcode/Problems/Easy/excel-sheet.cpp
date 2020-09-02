@@ -59,13 +59,16 @@ int main(int argc, char* argv[]) {
 
 	cout << res;
 
-
-
-
-	// for(auto x: m) {
-	// 	cout << x.first << " " << x.second << endl;
-	// }
-
-
    return 0;
 }
+
+// Simply :
+
+        // int n = s.size();
+        
+        // int ans = 0;
+        // for (int i =0 ; i < n ; i++)
+        // ans += (s[i] - 'A' + 1) * pow(26, n - i - 1);
+   
+        // return ans;
+
