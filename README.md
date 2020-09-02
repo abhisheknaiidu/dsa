@@ -16,13 +16,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 56    
+ 🟢 Easy: 57    
  🟡 Medium: 33  
  🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 90
+ __Total__ - 91
 
 <!-- Template for each day
 
@@ -195,6 +195,12 @@ __Focus for today:__ Everything
 #### LeetCode
  89. 🟢 [Majority Element](Leetcode/Problems/Easy/majority-element.cpp) _Notes: Moore's Voting Algorithm_
  90. 🟢 [Valid Anagram](Leetcode/Problems/Easy/valid-anagram.cpp) _Notes: take care of t.c and s.c_
+
+   ## Day 13
+__Focus for today:__ Everything
+#### LeetCode
+ 91. 🟢 [Excel Sheet Column Number](Leetcode/Problems/Easy/excel-sheet.cpp) _Notes: use map_
+
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
 
