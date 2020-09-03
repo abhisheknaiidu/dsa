@@ -41,3 +41,17 @@ int main(int argc, char* argv[]) {
 
     return -1;
 }
+
+// Unordered Map
+
+        // unordered_map <char, int> count;
+        // int n = s.length(), i=0;
+        // for (char c: s) count[c]++;
+        // for (; i<n; i++) {
+        //     if (count[s[i]] == 1) {
+        //         break;
+        //     }
+        // }
+        // if (i==n) return -1;
+        // else return i;
+    
