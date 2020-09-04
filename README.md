@@ -16,13 +16,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 58    
+ 🟢 Easy: 59    
  🟡 Medium: 33  
  🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 92
+ __Total__ - 93
 
 <!-- Template for each day
 
@@ -201,6 +201,11 @@ __Focus for today:__ Everything
 #### LeetCode
  91. 🟢 [Excel Sheet Column Number](Leetcode/Problems/Easy/excel-sheet.cpp) _Notes: use map_
  92. 🟢 [First Unique Character in a String](Leetcode/Problems/Easy/first-unique-str.cpp) 
+
+   ## Day 13
+__Focus for today:__ Everything
+#### LeetCode
+ 93. 🟢 [Repeated Substring Pattern](Leetcode/September-Challenge/repeated-sub-pattern.cpp) _Notes: make duplicate and ignore 1st and last_
 
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
