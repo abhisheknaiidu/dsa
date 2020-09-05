@@ -42,13 +42,36 @@ void subSets(vector<int> nums, vector<int> sub, vector<vector<int>> &res, int st
 	}
 }
 
+// void subSets(vector<int> nums,vector<int> sub, vector<vector<int>> &res) {
+// 	vector<vector<int>> v;
+// 	res.push_back(sub);
+
+// 	for(int i=0; i<nums.size(); i++) {
+// 		vector<int> s;
+// 		s.push_back(nums[i]);
+// 		v.push_back(s);
+// 		for(int j=0; j<v.size()-1; j++) {
+// 			vector<int> abhi = v[j];
+// 			abhi.push_back(nums[i]);
+// 			v.push_back(abhi);
+// 		}
+// 		for(auto x: v) {
+// 		for(auto p: x) {
+// 			cout << p << " ";
+// 		}
+// 		 cout << endl;
+// 	 }
+// 	}
+
+// }
+
 
 int main(int argc, char* argv[]) {
 	abhisheknaiidu();
 	vector<int> nums{1,2,3};
 	vector <vector<int>> res;
 	vector <int> sub;
-	subSets(nums,sub, res, 0);
+	subSets(nums, sub, res, 0);
 
 	for(auto x: res) {
 		for(auto p: x) {
