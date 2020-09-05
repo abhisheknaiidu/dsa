@@ -210,8 +210,8 @@ __Focus for today:__ Everything
    ## Day 14
 __Focus for today:__ Recursions
 #### LeetCode
- 94. 🟡 [Permutations](AlgoExpert/Medium/permutations.cpp) _Notes: 🌟 use backtracking_
- 95. 🟡 [Subsets](AlgoExpert/Medium/subset.cpp) _Notes: backtracking_
+ 94. 🟡 [Permutations](Leetcode/Problems/Medium/permutations.cpp) _Notes: 🌟 use backtracking_
+ 95. 🟡 [Subsets](Leetcode/Problems/Medium/subset.cpp) _Notes: backtracking_
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
 
