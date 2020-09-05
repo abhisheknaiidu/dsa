@@ -29,16 +29,16 @@ void subSets(vector<int> nums, vector<int> sub, vector<vector<int>> &res, int st
 	res.push_back(sub);
 	for(int i=start; i<nums.size(); i++) { // runs O(N) times
 		sub.push_back(nums[i]);
-		for(auto x: sub) {
-			cout << x << " ";
-		}
-		cout << endl;
+		// for(auto x: sub) {
+		// 	cout << x << " ";
+		// }
+		// cout << endl;
 		subSets(nums, sub, res, i+1); // runs O(2^N) times,
 		sub.pop_back();
-		for(auto x: sub) {
-			cout << x << " ";
-		}
-		cout << endl;
+		// for(auto x: sub) {
+		// 	cout << x << " ";
+		// }
+		// cout << endl;
 	}
 }
 
