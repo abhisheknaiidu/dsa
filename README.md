@@ -17,12 +17,12 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 __Difficulty Levels solved :__
  
  🟢 Easy: 59    
- 🟡 Medium: 34  
+ 🟡 Medium: 35  
  🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 94
+ __Total__ - 95
 
 <!-- Template for each day
 
@@ -211,6 +211,7 @@ __Focus for today:__ Everything
 __Focus for today:__ Recursions
 #### LeetCode
  94. 🟡 [Permutations](AlgoExpert/Medium/permutations.cpp) _Notes: 🌟 use backtracking_
+ 95. 🟡 [Subsets](AlgoExpert/Medium/subset.cpp) _Notes: backtracking_
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
 
