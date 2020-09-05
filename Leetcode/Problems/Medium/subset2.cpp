@@ -27,19 +27,21 @@ void abhisheknaiidu()
 void solve(vector<int> nums, vector<vector<int>>&res, vector<int> sub,int start) {
 	res.push_back(sub);
 	for(int i=start; i<nums.size(); i++) {
+		// cout << "start = " << start << "    " << "i  :" << i << endl;
+		// Change 2: check for duplicates!!!!
 		if(i>start && nums[i] == nums[i-1]) {
-			cout << "i = " << i << endl;
+			// cout << "i = " << i << endl;
 			continue;
 		}
 		sub.push_back(nums[i]);
 		solve(nums,res,sub,i+1);
 		sub.pop_back();
-		for(auto x: res) {
-			for(auto s: x) {
-				cout << s << " ";
-			}
-			cout << endl;
-		}
+		// for(auto x: res) {
+		// 	for(auto s: x) {
+		// 		cout << s << " ";
+		// 	}
+		// 	cout << endl;
+		// }
 	}
 }
 
@@ -48,6 +50,8 @@ int main(int argc, char* argv[]) {
 	vector<int> nums{1,2,2};
 	vector<vector<int>> res;
 	vector<int> sub;
+	// Change 1: Sort the Numbers;
+	sort(nums.begin(), nums.end());
 	solve(nums, res, sub, 0);
 
 	for(auto x: res) {

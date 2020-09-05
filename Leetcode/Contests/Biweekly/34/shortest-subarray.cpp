@@ -37,7 +37,6 @@ int main(int argc, char* argv[]) {
 		if(v[i] > v[i-1]) {
 			continue;
 		}
-		cout << v[i] << endl;
 		ans.push_back(v[i]);
 	}
 	is_sorted(ans.begin(), ans.end()) ? cout << ans.size() : cout << ans.size() + 1;
