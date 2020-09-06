@@ -26,21 +26,35 @@ void abhisheknaiidu()
 
 // Optimized Solution
 void solve(int n, vector<vector<int>> &res, vector<int> sub, int start) {
-	if(sub.size() == 2)
+	if(sub.size() == 5)
 	res.push_back(sub);
+    if(!sub.empty() && sub.size() + (n-sub.back()) < 5) {
+      cout << "op : ";
+      cout << sub.size() << " " << n << " " << sub.back() << " " << 5 << endl;
+      return;
+    }
 	for(int i=start; i<=n; i++) {
 		sub.push_back(i);
+		// for(auto x:sub) {
+		// 	cout << x << " ";
+		// }
+		// cout << endl;
 		solve(n, res, sub, i+1);
 		sub.pop_back();
 	}
 }
+
+// More Optimised can be done by:
+        // if (!empty(sub) && sub.size() + (n - sub.back()) < k) {
+        //     return;
+        // }
 
 // Or First Making a Vector of Nums and then proceeding the same, but it takes double time!
 
 int main(int argc, char* argv[]) {
 	abhisheknaiidu();
 
-	int n = 4;
+	int n = 5;
 	vector< vector<int>> res;
 	vector <int> sub;
 	solve(n, res, sub, 1);
