@@ -34,7 +34,7 @@ void solve(vector<int> candidates, vector<int> sub, vector<vector<int>>& res, in
 		sub.push_back(candidates[i]);
 		solve(candidates, sub, res, target-candidates[i], i);
 
-		sub.pop_back();
+		sub.pop_back(); // is same as sub.erase(sub.end() - 1)
 	}
 }
 
