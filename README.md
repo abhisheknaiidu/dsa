@@ -137,6 +137,7 @@ __Focus for today:__ Contest
  70. 🟢 [Most Visited Sector in a Circular Track](Leetcode/Contests/Weekly/203/most-visited-sector.cpp) _Notes: circular => f = f%n_
  71. 🟡 [Maximum Number of Coins You Can Get](Leetcode/Contests/Weekly/203/max-coins.cpp) _Notes: reverse and give you first_
 
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
 ## Day 8
 __Focus for today:__ Trees
 
@@ -145,7 +146,7 @@ __Focus for today:__ Trees
  73. 🟡 [Sum Root to Leaf Numbers](Leetcode/Problems/Medium/sum-root.cpp) _Notes: recursion_
  74. 🟢 [Symmetric Tree](Leetcode/Problems/Easy/tree-symmetric.cpp) _Notes: recursion(best)_
 
-
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
 ## Day 9
 __Focus for today:__ Trees
 
@@ -160,7 +161,8 @@ __Focus for today:__ Trees
  78. 🟡 [All Paths for a Sum](Educative/dfs/all-paths-sum.cpp) 
  79. 🟡 [Sum of Path Numbers](Educative/dfs/sum-of-path.cpp)
 
- ## Day 10
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 10
 __Focus for today:__ Trees
 
 #### Educative
@@ -169,7 +171,8 @@ __Focus for today:__ Trees
  80. 🟡 [Path With Given Sequence](Educative/dfs/find-seq.cpp)
  81. 🟡 [Count Paths for a Sum](Educative/dfs/count-paths-sum.cpp) _Notes: 🌟Careful of count in recursion_
 
-  ## Day 11
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 11
 __Focus for today:__ Graphs
 
 #### LeetCode
@@ -179,7 +182,8 @@ __Focus for today:__ Graphs
 #### AlgoExpert
  84. 🟢 [Depth First Search](AlgoExpert/Easy/dfs.cpp) _Notes: helper recursive function_
 
-  ## Day 11
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 12
 __Focus for today:__ Algorithms
 
 #### LeetCode
@@ -190,24 +194,28 @@ __Focus for today:__ Algorithms
  87. 🟡 [Kadane's Algorithm](AlgoExpert/Medium/kadane-algo.cpp) _Notes: used for finding maxSubArray_
  88. 🟢 [Nth Fibonacci](AlgoExpert/Easy/nth-fib.cpp) _Notes: Iterative method best among all!_
 
-  ## Day 12
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 13
 __Focus for today:__ Everything
 #### LeetCode
  89. 🟢 [Majority Element](Leetcode/Problems/Easy/majority-element.cpp) _Notes: Moore's Voting Algorithm_
  90. 🟢 [Valid Anagram](Leetcode/Problems/Easy/valid-anagram.cpp) _Notes: take care of t.c and s.c_
 
-   ## Day 13
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 14
 __Focus for today:__ Everything
 #### LeetCode
  91. 🟢 [Excel Sheet Column Number](Leetcode/Problems/Easy/excel-sheet.cpp) _Notes: use map_
  92. 🟢 [First Unique Character in a String](Leetcode/Problems/Easy/first-unique-str.cpp) 
 
-   ## Day 13
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 15
 __Focus for today:__ Everything
 #### LeetCode
  93. 🟢 [Repeated Substring Pattern](Leetcode/September-Challenge/repeated-sub-pattern.cpp) _Notes: make duplicate and ignore 1st and last_
 
-   ## Day 14
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 16
 __Focus for today:__ Recursions, Contest
 #### LeetCode
  94. 🟡 [Permutations](Leetcode/Problems/Medium/permutations.cpp) _Notes: 🌟 use backtracking_
@@ -215,13 +223,16 @@ __Focus for today:__ Recursions, Contest
  96. 🟢 [Matrix Diagonal Sum](Leetcode/Contests/Biweekly/34/matrix-diagonal-sum.cpp) 
  97. 🟡 [Subsets II](Leetcode/Problems/Medium/subset2.cpp) _Notes: backtraking_
  
-    ## Day 15
+ <!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 17
 __Focus for today:__ Backtracking
 #### LeetCode
  98.  🟡 [Combinations](Leetcode/Problems/Medium/combination.cpp) 
  99.  🟡 [Combination Sum](Leetcode/Problems/Medium/combination-sum.cpp)
  100. 🟡 [Combination Sum II](Leetcode/Problems/Medium/combination-sum2.cpp)
  
+ <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
 
 
