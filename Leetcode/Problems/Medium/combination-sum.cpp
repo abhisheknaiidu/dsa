@@ -42,8 +42,8 @@ void solve(vector<int> candidates, vector<int> sub, vector<vector<int>>& res, in
 int main(int argc, char* argv[]) {
 	abhisheknaiidu();
 
-	vector<int> candidates{2,3,5};
-	int target = 8;
+	vector<int> candidates{4,5,6};
+	int target = 10;
 	vector<vector<int>> res;
 	vector<int> sub;
 	solve(candidates, sub, res, target, 0);

@@ -197,6 +197,7 @@ __Focus for today:__ Algorithms
 <!-- --------------------------------------------------------------------------------------------------------------------- -->
 ## Day 13
 __Focus for today:__ Everything
+
 #### LeetCode
  89. 🟢 [Majority Element](Leetcode/Problems/Easy/majority-element.cpp) _Notes: Moore's Voting Algorithm_
  90. 🟢 [Valid Anagram](Leetcode/Problems/Easy/valid-anagram.cpp) _Notes: take care of t.c and s.c_
@@ -204,6 +205,7 @@ __Focus for today:__ Everything
 <!-- --------------------------------------------------------------------------------------------------------------------- -->
 ## Day 14
 __Focus for today:__ Everything
+
 #### LeetCode
  91. 🟢 [Excel Sheet Column Number](Leetcode/Problems/Easy/excel-sheet.cpp) _Notes: use map_
  92. 🟢 [First Unique Character in a String](Leetcode/Problems/Easy/first-unique-str.cpp) 
@@ -211,12 +213,14 @@ __Focus for today:__ Everything
 <!-- --------------------------------------------------------------------------------------------------------------------- -->
 ## Day 15
 __Focus for today:__ Everything
+
 #### LeetCode
  93. 🟢 [Repeated Substring Pattern](Leetcode/September-Challenge/repeated-sub-pattern.cpp) _Notes: make duplicate and ignore 1st and last_
 
 <!-- --------------------------------------------------------------------------------------------------------------------- -->
 ## Day 16
 __Focus for today:__ Recursions, Contest
+
 #### LeetCode
  94. 🟡 [Permutations](Leetcode/Problems/Medium/permutations.cpp) _Notes: 🌟 use backtracking_
  95. 🟡 [Subsets](Leetcode/Problems/Medium/subset.cpp) _Notes: backtracking_
@@ -226,12 +230,24 @@ __Focus for today:__ Recursions, Contest
  <!-- --------------------------------------------------------------------------------------------------------------------- -->
 ## Day 17
 __Focus for today:__ Backtracking
+
 #### LeetCode
  98.  🟡 [Combinations](Leetcode/Problems/Medium/combination.cpp) 
  99.  🟡 [Combination Sum](Leetcode/Problems/Medium/combination-sum.cpp)
  100. 🟡 [Combination Sum II](Leetcode/Problems/Medium/combination-sum2.cpp)
  
  <!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 18
+__Focus for today:__ Analysing Patterns
+
+#### Educative
+   [Sub Sets Pattern](Educative/pattern-subsets) _Notes: Follows BFS in every Approach_
+
+ 101. 🟡 [String Permutation](Educative/pattern-subsets/string-permutation.cpp) 
+ 102. 🟡 [Playing With Permutations](Educative/pattern-subsets/permutation.cpp)
+ 103. 🟡 [Combination of Subsets 2](Educative/pattern-subsets/sub-with-duplicates.cpp)
+ 104. 🟢 [Combination of Subset](Educative/pattern-subsets/sub.cpp)
+
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
 

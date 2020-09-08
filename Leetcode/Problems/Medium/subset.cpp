@@ -28,6 +28,7 @@ void abhisheknaiidu()
 void subSets(vector<int> nums, vector<int> sub, vector<vector<int>> &res, int start) {
 	res.push_back(sub);
 	for(int i=start; i<nums.size(); i++) { // runs O(N) times
+		// cout << "start :" << start << " " << "i :" << i << endl;
 		sub.push_back(nums[i]);
 		// for(auto x: sub) {
 		// 	cout << x << " ";
@@ -35,6 +36,8 @@ void subSets(vector<int> nums, vector<int> sub, vector<vector<int>> &res, int st
 		// cout << endl;
 		subSets(nums, sub, res, i+1); // runs O(2^N) times,
 		sub.pop_back();
+		// cout << "start :" << start << " " << "i :" << i << endl;
+		// cout << "sub :";
 		// for(auto x: sub) {
 		// 	cout << x << " ";
 		// }

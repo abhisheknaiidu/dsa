@@ -63,7 +63,7 @@ void solve(vector<int> arr, vector<int> currentPermutation, vector<vector<int>> 
 		}
 		cout << endl;
 		solve(arr, currentPermutation, permutations);
-		currentPermutation.erase(currentPermutation.end()-1);
+		currentPermutation.pop_back();
 		cout << "Backtrack: ";
 		for(auto x: currentPermutation) {
 			cout << x << " ";
