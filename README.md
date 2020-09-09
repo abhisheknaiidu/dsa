@@ -248,6 +248,15 @@ __Focus for today:__ Analysing Patterns
  103. 🟡 [Combination of Subsets 2](Educative/pattern-subsets/sub-with-duplicates.cpp)
  104. 🟢 [Combination of Subset](Educative/pattern-subsets/sub.cpp)
 
+  <!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 19
+__Focus for today:__ September Challenge
+
+#### LeetCode
+ 105. 🟡 [Compare Version Numbers](Leetcode/September-Challenge/compare-version-num.cpp) _Notes: use istringstream and stoi stl_
+ 106. 🟡 [Word Pattern](Leetcode/September-Challenge/word-pattern.cpp) _Notes: use unordered maps_
+
+
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
 
