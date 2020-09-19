@@ -16,13 +16,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 59    
- 🟡 Medium: 40  
+ 🟢 Easy: 61    
+ 🟡 Medium: 45  
  🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 100
+ __Total__ - 107
 
 <!-- Template for each day
 
@@ -256,6 +256,11 @@ __Focus for today:__ September Challenge
  105. 🟡 [Compare Version Numbers](Leetcode/September-Challenge/compare-version-num.cpp) _Notes: use istringstream and stoi stl_
  106. 🟡 [Word Pattern](Leetcode/September-Challenge/word-pattern.cpp) _Notes: use unordered maps_
 
+## Day 20
+__Focus for today:__ Strings
+
+#### AlgoExpert
+ 107. 🟢 [Caesar Ciphor Encryptor](AlgoExpert/Easy/caesar-cipher.cpp)
 
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_

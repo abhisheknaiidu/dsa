@@ -24,22 +24,27 @@ void abhisheknaiidu()
 #endif
 }
 
-// Time - O(N)
-// Space - O(1)
+
 int main(int argc, char* argv[]) {
 	abhisheknaiidu();
 
-	vector<int> nums{3,5,-9,1,3,-2,3,4,7,2,-9,6,3,1,-5,4};
+	string s = "abc";
+	int n = 2;
+	vector<char> v(26);
+	int alp = 97;
 
-	int max_ending_here = 0;
-	int max_so_far = 0;
-	for(int i=0; i<nums.size(); i++) {
-		max_ending_here = max(max_ending_here + nums[i], nums[i]);
-		max_so_far = max(max_so_far, max_ending_here);
+	for(int i=0; i<26; i++) {
+		v[i] = alp;
+		// cout << v[i] << endl;
+		alp++;
 	}
 
-	cout << max_so_far;
-
+	for(int i=0; i<s.size(); i++) {
+		// s[i] = (s[i] - 'a');
+		int a = s[i] - 'a';
+		int ans = (a + n) % 26;
+		cout << v[ans] << endl;
+	}
 
    return 0;
 }
