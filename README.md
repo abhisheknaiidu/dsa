@@ -17,12 +17,12 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 __Difficulty Levels solved :__
  
  🟢 Easy: 61    
- 🟡 Medium: 45  
+ 🟡 Medium: 46  
  🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 107
+ __Total__ - 108
 
 <!-- Template for each day
 
@@ -261,7 +261,7 @@ __Focus for today:__ Strings
 
 #### AlgoExpert
  107. 🟢 [Caesar Ciphor Encryptor](AlgoExpert/Easy/caesar-cipher.cpp)
-
+ 108. 🟡 [Longest Palindromic Substring](AlgoExpert/Medium/longest-palindrome.cpp)
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
 
