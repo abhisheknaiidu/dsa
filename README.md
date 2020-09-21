@@ -17,7 +17,7 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 __Difficulty Levels solved :__
  
  🟢 Easy: 61    
- 🟡 Medium: 47  
+ 🟡 Medium: 48  
  🔴 Hard:1   
  ⚫️ Very Hard: 0   
  🌟 Good to review
@@ -269,6 +269,12 @@ __Focus for today:__ Strings
 #### AlgoExpert
  109. 🟡 [Group Anagrams](AlgoExpert/Medium/group-anagrams.cpp) _Bucket Everything in hashmap and take care of TC and SC.
  110. 🔴 [Longest Substring Without Duplication](AlgoExpert/Medium/longest-sub-without-dup.cpp)
+
+## Day 22
+__Focus for today:__ Arrays
+  
+#### AlgoExpert
+ 111. 🟡 [Three Sum](AlgoExpert/Medium/three-sum.cpp) _Notes: Take Care of Duplicates_
 
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
