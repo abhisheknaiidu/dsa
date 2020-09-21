@@ -268,6 +268,7 @@ __Focus for today:__ Strings
 
 #### AlgoExpert
  109. 🟡 [Group Anagrams](AlgoExpert/Medium/group-anagrams.cpp) _Bucket Everything in hashmap and take care of TC and SC.
+ 110. 🔴 [Longest Substring Without Duplication](AlgoExpert/Medium/longest-sub-without-dup.cpp)
 
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
