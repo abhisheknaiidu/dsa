@@ -16,13 +16,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 61    
- 🟡 Medium: 50  
+ 🟢 Easy: 62    
+ 🟡 Medium: 51  
  🔴 Hard:2   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 113
+ __Total__ - 115
 
 <!-- Template for each day
 
@@ -282,7 +282,10 @@ __Focus for today:__ Arrays
   
 #### AlgoExpert
  113. 🟡 [Move Element To End](AlgoExpert/Medium/move-element-end.cpp) _Notes: Two Pointers_
+ 114. 🟡 [Monotonic Array](AlgoExpert/Medium/monotonic-array.cpp) _Notes: One Pass 🔥_
 
+#### LeetCode
+ 115. 🟢 [Monotonicity](Leetcode/Problems/Easy/monotoic-array.cpp)
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
 
