@@ -17,12 +17,12 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 __Difficulty Levels solved :__
  
  🟢 Easy: 61    
- 🟡 Medium: 49  
+ 🟡 Medium: 50  
  🔴 Hard:2   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 112
+ __Total__ - 113
 
 <!-- Template for each day
 
@@ -276,6 +276,12 @@ __Focus for today:__ Arrays
 #### AlgoExpert
  111. 🟡 [Three Sum](AlgoExpert/Medium/three-sum.cpp) _Notes: Take Care of Duplicates_
  112. 🟡 [Smallest Difference](AlgoExpert/Medium/smallest-diff.cpp) _Notes: Two Pointers_
+
+## Day 22
+__Focus for today:__ Arrays
+  
+#### AlgoExpert
+ 113. 🟡 [Move Element To End](AlgoExpert/Medium/move-element-end.cpp) _Notes: Two Pointers_
 
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
