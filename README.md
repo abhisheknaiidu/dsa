@@ -16,13 +16,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 62    
- 🟡 Medium: 51  
+ 🟢 Easy: 63    
+ 🟡 Medium: 52  
  🔴 Hard:2   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 115
+ __Total__ - 117
 
 <!-- Template for each day
 
@@ -277,7 +277,7 @@ __Focus for today:__ Arrays
  111. 🟡 [Three Sum](AlgoExpert/Medium/three-sum.cpp) _Notes: Take Care of Duplicates_
  112. 🟡 [Smallest Difference](AlgoExpert/Medium/smallest-diff.cpp) _Notes: Two Pointers_
 
-## Day 22
+## Day 23
 __Focus for today:__ Arrays
   
 #### AlgoExpert
@@ -286,6 +286,16 @@ __Focus for today:__ Arrays
 
 #### LeetCode
  115. 🟢 [Monotonicity](Leetcode/Problems/Easy/monotoic-array.cpp)
+
+ ## Day 24
+ __Focus for today:__ Contest, Miscellaneous 
+
+#### LeetCode
+ 116. 🟡 [XOR Queries of a Subarray](Leetcode/Contests/Weekly/170/xor-queries.cpp) _Notes: xorSum vector and manupalate_
+ 117. 🟢 [Decrypt String from Alphabet to Integer Mapping](Leetcode/Contests/Weekly/170/decrypt-string.cpp) _Notes: general_
+
+
+
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
 
