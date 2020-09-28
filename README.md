@@ -16,13 +16,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 63    
+ 🟢 Easy: 65    
  🟡 Medium: 52  
  🔴 Hard:2   
  ⚫️ Very Hard: 0   
  🌟 Good to review
 
- __Total__ - 117
+ __Total__ - 119
 
 <!-- Template for each day
 
@@ -299,7 +299,7 @@ __Focus for today:__ Arrays
 
 #### LeetCode
  118. 🟢 [Intersection of Two Arrays II](Leetcode/Problems/Easy/intersection-arr.cpp) _Notes: set-intersection stl_
-
+ 119. 🟢 [Power of 3](Leetcode/Problems/Easy/power-of-3.cpp) _Notes: log2(n) / log2(3)_
 
 
 
