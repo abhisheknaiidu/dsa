@@ -12,8 +12,8 @@
 
 </div>
 
-My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and Other Coding Sites. I will be adding my solutions to this repository every day starting from 13th Aug Seriously 😅.
-
+My solutions to the coding interview problems on LeetCode, AlgoExpert, Educative and Other Coding Sites. I will be adding my solutions to this repository every day starting from 13th Aug Seriously 😅.
+You can visit the classified folders and see the solutions.
 __Difficulty Levels solved :__
  
  🟢 Easy: 65    
