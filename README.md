@@ -17,12 +17,12 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and
 **Difficulty Levels solved :**
 
 🟢 Easy: 66  
- 🟡 Medium: 53  
+ 🟡 Medium: 54  
  🔴 Hard:2  
  ⚫️ Very Hard: 0  
  🌟 Good to review
 
-**Total** - 121
+**Total** - 122
 
 <!-- Template for each day
 
@@ -385,5 +385,6 @@ Adding solutions to all problems I have completed today
 ## Day 26 : 23rd Oct - 2020
 
 121.  🟡 [Spiral Traversal](AlgoExpert/Medium/spiral-traverse.cpp) _Notes: Make Sure of 4 variables and dir_
+122.  🟡 [Longest Peak](AlgoExpert/Medium/longest-peak.cpp) _Notes: Binary Search_
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
