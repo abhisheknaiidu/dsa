@@ -25,7 +25,9 @@ void abhisheknaiidu()
 }
 
 // T.C - O(Nlog(N) + Mlog(M) + N + M) ==> )(N(logN) + Mlog(M))
-// S.C - O(1) because we are storing the array in place.
+// Sorting for A of length A and B of length is Nlog(N) + Mlog(M) +
+// Two pointer logic, we are just iterating over the array once => N + M
+// S.C - O(1) because we are sorting the array in place and we're not storing any additional memory.
  
 int main(int argc, char* argv[]) {
 	abhisheknaiidu();
