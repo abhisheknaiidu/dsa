@@ -24,6 +24,10 @@ void abhisheknaiidu()
 #endif
 }
 
+// T.C: O(N), where N is the total number of elements in the input matrix.
+// S.C : O(1) without considering the output array, since we don't use any additional data structures for our computations.
+// and O(N) if the output array is taken into account.
+
 
 int main(int argc, char* argv[]) {
 	abhisheknaiidu();
