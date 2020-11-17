@@ -12,17 +12,17 @@
 
 </div>
 
-My solutions to coding interview problems on LeetCode, AlgoExpert, Educative and Other Coding Sites. I will be adding my solutions to this repository every day starting from 13th Aug Seriously 😅.
+My solutions to coding interview problems on LeetCode, AlgoExpert, GFG, Educative, and Other Coding Sites. I will be adding my solutions to this repository every day whenever I do solve them :)
 
 **Difficulty Levels solved :**
 
-🟢 Easy: 66  
- 🟡 Medium: 54  
+🟢 Easy: 70  
+ 🟡 Medium: 60  
  🔴 Hard:2  
  ⚫️ Very Hard: 0  
  🌟 Good to review
 
-**Total** - 122
+**Total** - 132
 
 <!-- Template for each day
 
@@ -382,9 +382,25 @@ Adding solutions to all problems I have completed today
 119.  🟢 [Power of 3](Leetcode/Problems/Easy/power-of-3.cpp) _Notes: log2(n) / log2(3)_
 120.  🟢 [Prime Numbers](Leetcode/Problems/Easy/count-primes.cpp) _Notes: Sieve of eratosthenes_
 
-## Day 26 : 23rd Oct - 2020
+## Day 26
 
 121.  🟡 [Spiral Traversal](AlgoExpert/Medium/spiral-traverse.cpp) _Notes: Make Sure of 4 variables and dir_
 122.  🟡 [Longest Peak](AlgoExpert/Medium/longest-peak.cpp) _Notes: Binary Search_
+
+## Day 27
+
+123. 🟢 [Cyclic Rotate](https://practice.geeksforgeeks.org/problems/cyclically-rotate-an-array-by-one/0)
+124. 🟢 [Find the maximum and minimum element in an array](https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/)
+125. 🟢 [Find the "Kth" max and min element of an array](https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1)
+126. 🟢 [Move all the negative elements to one side of the array ](https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s/0#)
+
+## Day 28
+
+127. 🟡 [Find duplicate in an array of N+1 Integers](https://leetcode.com/problems/find-the-duplicate-number/)
+128. 🟡 [Find Largest sum contiguous Subarray](https://practice.geeksforgeeks.org/problems/cyclically-rotate-an-array-by-one/0)
+129. 🟡 [Longest Consecutive Subsequence](https://practice.geeksforgeeks.org/problems/longest-consecutive-subsequence/0)
+130. 🟡 [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+131. 🟡 [Find maximum product subarray](https://practice.geeksforgeeks.org/problems/maximum-product-subarray3604/1)
+132. 🟡 [Smallest subarray with sum greater than a given value](https://practice.geeksforgeeks.org/problems/smallest-subarray-with-sum-greater-than-x/0)
 
 _Inspired by [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)_
