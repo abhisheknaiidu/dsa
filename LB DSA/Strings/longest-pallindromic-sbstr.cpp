@@ -23,7 +23,7 @@ void abhisheknaiidu()
 	freopen("output.txt", "w", stdout);
 #endif
 }
-
+/// Expand Around Center
 int helper(string str, int l, int r) {
 	while( l >= 0 && r < str.size() && str[l] == str[r]) {
 		l--;
