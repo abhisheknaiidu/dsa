@@ -29,7 +29,7 @@ int helper(string str, int l, int r) {
 		l--;
 		r++;
 	}
-	return r - l - 1;
+	return r - l - 1; // vector<int> {l+1, r} for the exact postion
 }
 
 int main(int argc, char* argv[]) {

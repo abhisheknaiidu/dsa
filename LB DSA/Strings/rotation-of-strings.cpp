@@ -32,9 +32,8 @@
  	if(s1.size() != s2.size()) {
  		cout << "0" << endl;
  	}
- 	string temp = s1 + s2;
- 	cout << (temp.find(s1) != string::npos) << endl;
+ 	string temp = s1 + s1;
+ 	cout << (temp.find(s2) != string::npos) << endl;
  	
- 
     return 0;
  }
