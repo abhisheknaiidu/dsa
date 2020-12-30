@@ -28,28 +28,25 @@ void abhisheknaiidu()
 int main(int argc, char* argv[]) {
 	abhisheknaiidu();
 
-	vector<int> v{1,-1,3,2,-2,-8,1,7,10,23};
-
-	unordered_map<int, int> m;
-	int n = v.size();
-	int sum = 0;
-	int ans = 0;
-	int count = 0;
-	for(int i=0; i<n; i++) {
-		sum += v[i];
-		if(sum == 0) {
-			ans = i+1;
-		}
-		else {
-			if(m.find(sum) != m.end()) {
-				ans = max(ans, i - m[sum]);
+	vector<int> nums{0,3,7,2,5,8,4,6,0,1};
+	int n = nums.size();
+	unordered_set <int> hash;
+	for(auto num: nums) {
+		hash.insert(num);
+	}
+	int longestStreak = 0;
+	for(auto num: nums) {
+		if(hash.find(num-1) == hash.end()) {
+			int cur_num = num;
+			int currentStreak = 1;
+			while(hash.find(cur_num + 1) != hash.end()) {
+				cur_num++;
+				currentStreak++;
 			}
-			else {
-				m[sum] = i;
-			}
+			longestStreak = max(longestStreak, currentStreak);
 		}
 	}
-	cout << ans << endl;
+	cout << longestStreak << endl;
 
    return 0;
 }
