@@ -48,21 +48,6 @@ void insert(int x, int n) {
 	temp1->next = temp;
 }
 
-void del(int d) {
-	Node* temp3 = head;
-	if(d == 1) {
-		head = temp3->next;
-		free(temp3); // free the memory which is being pointed to this variable temp3
-	    return;
-	}
-	for(int i=1; i<d-1; i++) {
-		temp3 = temp3->next;
-	}
-	Node* temp4 = temp3->next;
-	temp3->next = temp4->next;
-	free(temp4);
-}
-
 void print() {
 	Node* temp2=head;
 	while(temp2 != NULL) {
@@ -72,26 +57,42 @@ void print() {
 	cout << endl;
 }
 
+void reverseIterative() {
+	Node *dummy = NULL;
+
+	while(head != NULL) {
+		Node *Next = head->next;
+		head->next = dummy;
+		dummy = head;
+		head = Next;
+	}
+	head = dummy;
+}
+
+void reverseRecursive(Node* p) {
+	if(p->next == NULL) {
+		head = p;
+		return;
+	}
+	reverseRecursive(p->next);
+	Node *q = p->next;
+	q->next = p;
+	p->next = NULL;
+}
+
 int main(int argc, char* argv[]) {
 	abhisheknaiidu();
 
-	head = NULL; // empty list
-
-		insert(2,1); // 2
-		insert(4,2); // 2,4
-		insert(3,1); // 3,2,4
-		insert(6,4); // 3,2,4,6
-		print();
-        // For Deleteing, we can either -
-		// 1. fix the links - it's not alone favourable because node as we know node allocates
-		// space what we call dyanamic memory/ heap section of the memory.
-		// 2. free the space 
-		int x = 2;
-
-		del(4);
-		print();
-
-
+	head = NULL;
+	insert(1,1);
+	insert(2,2);
+	insert(3,3);
+	insert(4,4);
+	print();
+	reverseIterative();
+	print();
+	// reverseRecursive(head);
+	print();
 
    return 0;
 }
