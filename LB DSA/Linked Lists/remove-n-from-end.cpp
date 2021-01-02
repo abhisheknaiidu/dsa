@@ -48,4 +48,4 @@ ListNode* removeNthFromEnd(ListNode* head, int n) {
       second->next = second->next->next;
       head = dummy->next;
       return head;
-    }re
+    }
