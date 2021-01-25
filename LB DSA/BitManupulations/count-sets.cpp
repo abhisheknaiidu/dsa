@@ -46,7 +46,7 @@ int main(int argc, char* argv[]) {
 
 	// cout << ans << endl;
 
-	// Better Approach 🔥
+	// Better Approach 🔥 T C => O(log(N))
 	int n = 30;
 	n++;
 	int ans = n/2;
@@ -68,6 +68,41 @@ int main(int argc, char* argv[]) {
     // Now for every element i from the range [2, N], if i is even then it will have the same number of set bits as i / 2
     // because to get the number i we just shift the number i / 2 by one. While shifting, the number of set bits does not change.
     // Similarly, if i is odd then it will have 1 additional set bit at 0th position than i – 1 which was even.
+
+    // int cnt = 0; 
+  
+    // To store the count of set 
+    // bits in every integer 
+    // vector<int> setBits(n + 1); 
+  
+    // 0 has no set bit 
+    // setBits[0] = 0; 
+  
+    // 1 has a single set bit 
+    // setBits[1] = 1; 
+  
+    // For the rest of the elements 
+    // for (int i = 2; i <= n; i++) { 
+  
+        // If current element i is even then 
+        // it has set bits equal to the count 
+        // of the set bits in i / 2 
+    //     if (i % 2 == 0) { 
+    //         setBits[i] = setBits[i / 2]; 
+    //     } 
+  
+        // Else it has set bits equal to one 
+        // more than the previous element 
+    //     else { 
+    //         setBits[i] = setBits[i - 1] + 1; 
+    //     } 
+    // } 
+  
+    // Sum all the set bits 
+    // for (int i = 0; i <= n; i++) { 
+    //     cnt = cnt + setBits[i]; 
+    // } 
+
 
 
    return 0;
