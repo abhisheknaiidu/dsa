@@ -6,7 +6,7 @@
 // Except x = 0, for all other cases, it works:
 
 // 3- Counting Set Bits: by Brian Kernighan's Algorithm
-// we need to first pop number's first leftmost set bit, like:
+// we need to first pop number's first rightmost set bit, like:
 // 1010100, it should be first converted to 1010000.
 // but how? we use the logic like this=> x= x & (x-1)
 // then increment the count.
