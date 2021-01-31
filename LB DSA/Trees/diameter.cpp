@@ -15,6 +15,15 @@
 
 using namespace std;
 
+void abhisheknaiidu()
+{
+	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#ifndef ONLINE_JUDGE
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+#endif
+}
+
 struct Node {
 	int data;
 	Node* left;
@@ -29,34 +38,15 @@ Node* newNode(int n) {
 	return(temp);
 }
 
-// T.C - O(N)
-void reverseLevel(Node* root) {
-	queue <Node*> q;
-	stack <Node*> s;
-	q.push(root);
-	while(!q.empty()) {
-		Node* cur = q.front();
-		s.push(cur);
-		if(cur->right) q.push(cur->right);
-		if(cur->left) q.push(cur->left);
-		q.pop();
-	}
-	while(!s.empty()) {
-		Node* t = s.top();
-		cout << t->data << " ";
-		s.pop();
+pair<int, int> dfs(Node* root) {
+	if(root == NULL) return {0,0};
+	else {
+		pair<int,int> left = dfs(root->left);
+		pair<int,int> right = dfs(root->right);
+		int dia = max({left.first, right.first, left.second + right.second});
+		return {dia, max(left.second, right.second) +1};
 	}
 }
-
-void abhisheknaiidu()
-{
-	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-#ifndef ONLINE_JUDGE
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
-#endif
-}
-
 
 int main(int argc, char* argv[]) {
 	abhisheknaiidu();
@@ -67,7 +57,7 @@ int main(int argc, char* argv[]) {
 	root->left->left = newNode(40);
 	root->left->right = newNode(60);
 
-	reverseLevel(root);
+	cout << dfs(root).first + 1<< endl;
 
    return 0;
 }

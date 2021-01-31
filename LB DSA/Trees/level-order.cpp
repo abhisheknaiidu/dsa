@@ -38,6 +38,7 @@ Node* newNode(int n) {
 	return(temp);
 }
 
+// T.C - O(N)
 void level(Node* root) {
 	queue <Node*> q;
 	q.push(root);
