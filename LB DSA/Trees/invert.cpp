@@ -37,7 +37,7 @@ Node* newNode(int n) {
 	temp->left = temp->right = NULL;
 	return(temp);
 }
-
+// T-C => O(n) and S-C => O(n)
 void invert(Node* root) {
 	queue<Node*> q;
 	q.push(root);
