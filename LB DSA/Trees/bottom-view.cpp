@@ -26,7 +26,6 @@ void abhisheknaiidu()
 
 struct Node {
 	int data;
-	int hr;
 	Node* left;
 	Node* right;
 };
@@ -39,54 +38,24 @@ Node* newNode(int n) {
 	return(temp);
 }
 
-void topView(Node* root) {
-	map<int, int>m;
-	queue<Node*> q;
-	int hr = 0;
-	root->hr = hr;
-	q.push(root);
-	while(!q.empty()) {
-		Node* cur = q.front();
-		hr = cur->hr;
-		if(m.count(hr) == 0) {
-			cout << hr << endl;
-			m[hr] = cur->data;
-		}
-		q.pop();
-		if(cur->left) {
-			cur->left->hr = hr - 1;
-			q.push(cur->left);
-		}
-		if(cur->right) {
-			cur->right->hr = hr + 1;
-			q.push(cur->right);
-		}
-		// root = q.front();
-	}
-	cout << m.size() << endl;
-	for(auto x: m) {
-		cout << x.second << endl;
-	}
-}
 
 // OR
-void topView(Node* root) {
+void bottomView(Node* root) {
 	 if(root == NULL){
         return;
     }
     queue<pair<Node *, int>> q;
-    map<int, int> mp;
+    map<int, int> m;
     q.push({root, 0});
 
-    // doing level order traversal and finding the extreme elements
     while(!q.empty()){
 
         Node* cur = q.front().first;
         int hr = q.front().second;
         q.pop();
 
-        if(mp.find(hr) == mp.end()){
-            mp[hr] = cur->data;
+        if(m.count(hr)>=0){
+            m[hr] = cur->data;
         }
 
         if(cur->left){
@@ -97,11 +66,10 @@ void topView(Node* root) {
             q.push({cur->right, hr+1});
         }
     }
-
-    for(auto it = mp.begin(); it != mp.end(); it++){
-        cout << it->second << " ";
+    cout << m.size() << endl;
+    for(auto x:m) {
+    	cout << x.second << " ";
     }
-    cout<<endl;
 }
 
 
@@ -114,6 +82,6 @@ int main(int argc, char* argv[]) {
 	root->left->left = newNode(40);
 	root->left->right = newNode(60);
 
-	topView(root);
+	bottomView(root);
    return 0;
 }
