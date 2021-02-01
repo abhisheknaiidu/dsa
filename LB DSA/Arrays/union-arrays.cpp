@@ -1,4 +1,4 @@
-#pragma GCC optimize("Ofast")
+ vfgr#pragma GCC optimize("Ofast")
 #include <algorithm>
 #include <bitset>
 #include <deque>
