@@ -40,19 +40,13 @@ Node* newNode(int n) {
 
 void getCoordinates(Node* root, int x, int y, map<int, vector<pair<int, int>>> &m) {
     if(root == NULL) return;
-    m[y].push_back({(root->data), x});
+    m[x].push_back({(root->data), y});
     if(root->left) getCoordinates(root->left, x+1 , y-1, m);
     if(root->right) getCoordinates(root->right, x+1, y+1, m);
 }
 
-static bool cmp(pair<int, int>&a, pair<int, int>&b) {
-    if(a.second == b.second) {
-        return a.first < b.first;
-    }
-    return a.second < b.second;
-}
-
-vector<vector<int>> vertical(Node* root) {
+// much more faster!
+int bottomLeft(Node* root) {
      if(root == NULL){
         return {};
     }
@@ -60,18 +54,36 @@ vector<vector<int>> vertical(Node* root) {
     int x = 0;
     int y = 0;
     getCoordinates(root, x, y, m);
-    vector<vector<int>> ans;
+    int res;
+    int n = m.size();
+    res = 0;
+    res = m[n-1][0].first;
 
-    for(auto x:m) {
-        sort(x.second.begin(), x.second.end(), cmp);
-        vector<int> sub;
-        for(auto y:x.second) {
-            sub.push_back(y.first);
+    return res;
+}
+
+// less faster!! 
+int bottomLeftv2(Node* root) {
+    queue<Node*> q;
+    q.push(root);
+    vector<int> row;
+    row.push_back(root->data);
+    while(!q.empty()) {
+        row.clear();
+        int n = q.size();
+        while(n--) {
+            Node* cur = q.front();
+            row.push_back(cur->data);
+            q.pop();
+            if(cur->left){
+                q.push(cur->left);
+            }
+            if(cur->right) {
+                q.push(cur->right);
+            }
         }
-        ans.push_back(sub);
     }
-
-    return ans;
+    return row[0];   
 }
 
 
@@ -86,12 +98,7 @@ int main(int argc, char* argv[]) {
     root->right->left = newNode(6);
     root->right->right = newNode(7);
 
-    vector<vector<int>> res = vertical(root);
-    for(auto x: res) {
-        for(auto y: x) {
-            cout << y << " ";
-        }
-        cout << endl;
-    }
+    cout << bottomLeft(root) << endl;
+    cout << bottomLeftv2(root) << endl;
    return 0;
 }
