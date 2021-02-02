@@ -1,2 +1,4 @@
-4
-4
+left  -1 right -1
+left  0 right -1
+left  1 right -1
+0
