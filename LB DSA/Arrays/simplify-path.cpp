@@ -24,30 +24,23 @@ void abhisheknaiidu()
 #endif
 }
 
-// Time - O(N)
-// Space - O(1)
+
 int main(int argc, char* argv[]) {
 	abhisheknaiidu();
 
-	vector<int> nums{3,5,-9,1,3,-2,3,4,7,2,-9,6,3,1,-5,4};
-
-	int max_ending_here = 0;
-	int max_so_far = 0;
-	for(int i=0; i<nums.size(); i++) {
-		max_ending_here = max(max_ending_here + nums[i], nums[i]);
-		// cout << max_ending_here << endl;
-		max_so_far = max(max_so_far, max_ending_here);
+	string path = "/home//foo/";
+	string ans = "";
+	int n = path.size();
+	if(path[n-1] == '/') path.erase(path.begin() + n-1);
+	int m = path.size();
+	ans += path[0];
+	for(int i=1; i<m;i++) {
+		if((path[i-1] == '/') && (path[i] == '/')) continue;
+		// cout << i << endl;
+		ans += path[i];
+		if(path[i] == '.') ans.clear();
 	}
-	int sum = 0;
-	int maxx = 0;
-	for(int i=0; i<nums.size(); i++) {
-		sum+=nums[i];
-		if(sum<0) sum = 0;
-		maxx = max(maxx, sum);
-	}
-	cout << maxx << endl;
-
-	cout << max_so_far;
+	cout << ans << endl;
 
 
    return 0;

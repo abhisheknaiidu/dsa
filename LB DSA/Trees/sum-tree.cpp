@@ -39,14 +39,20 @@ Node* newNode(int n) {
 }
 
 // T.C - O(N)
-int checkBalance(Node* root) {
-	if(root->left == NULL || root->right == NULL) return root->data;
+int sum(Node* root) {
+	if(root == NULL) return 0;
+	return sum(root->left) + root->data + sum(root->right);
+}
+int checkSum(Node* root) {
+	if((root->left == NULL && root->right == NULL) ||  (root == NULL)) return 1;
 
-	int left = checkBalance(root->left);
-	int right = checkBalance(root->right); 
+	int left = sum(root->left);
+	int right = sum(root->right); 
 	cout << "left  " << left << " " << "right " << right << endl;
-
-	return (left+right) + root->data;
+	if((root->data == left + right) && checkSum(root->left) && checkSum(root-left)) {
+		return 1;
+	}
+	return 0;
 }
 
 
@@ -57,12 +63,8 @@ int main(int argc, char* argv[]) {
 	root->left = newNode(20);
 	root->right = newNode(30);
 	root->left->left = newNode(10);
-	root->left->right = newNode(10);
-	bool ans = true;
-	if((checkBalance(root) - root->data) == root->data) {
-		cout << "1" << endl;
-	}
-	cout << ans << endl;
+	// root->left->right = newNode(10);
+	cout << checkSum(root) << endl;
 
    return 0;
 }

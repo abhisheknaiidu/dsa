@@ -38,7 +38,18 @@ Node* newNode(int n) {
 	return(temp);
 }
 
+// recursive
+Node* trimBST(Node* root, int low, int high) {
+	if(root == NULL) return root;
+	if(root->data > high) return trimBST(root->left, low, high);
+	if(root->data < low) return trimBST(root->right, low, high);
+	root->left = trimBST(root->left, low, high);
+	root->right = trimBST(root->right, low, high);
+	return root;
+}
+
 // iterative 
+// this is not a tail recursion, so it will require stack.
 vector<int> trimBST(Node* root, int low, int high) {
 	//find root
 	while(root != NULL && (root->data < low || root->data > high)) {
