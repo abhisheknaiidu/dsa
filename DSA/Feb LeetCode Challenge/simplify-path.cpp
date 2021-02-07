@@ -9,7 +9,8 @@ public:
             if (temp == "" or temp == ".") continue;
             if (!stack.empty() && temp == "..")
                 stack.pop_back();
-            else{
+            // edge case - "/.." => "/"
+            else if(temp != ".."){
                 stack.push_back(temp);
             }
         }
