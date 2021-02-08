@@ -62,7 +62,8 @@ int main(int argc, char* argv[]) {
 	root->left->left = newNode(40);
 	// root->left->right = newNode(60);
 	bool ans = true;
-	checkBalance(root, ans);
+	// checkBalance(root, ans);
+	cout << checkBalance(root, ans) << endl;
 	cout << ans << endl;
 
    return 0;
