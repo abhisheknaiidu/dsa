@@ -41,10 +41,18 @@ Node* newNode(int n) {
 pair<int, int> dfs(Node* root) {
 	if(root == NULL) return {0,0};
 	else {
+
 		pair<int,int> left = dfs(root->left);
 		pair<int,int> right = dfs(root->right);
-		int dia = max({left.first, right.first, left.second + right.second});
-		return {dia, max(left.second, right.second) +1};
+		int leftAndRightMax = max(left.first, right.first);
+		int bestDia = max(leftAndRightMax, left.second + right.second);
+		// this case -      n
+		              //  / \
+		              // n   n
+		              //  \
+		              //   n
+		int height = max(left.second, right.second) + 1;
+		return {bestDia, height};
 	}
 }
 
