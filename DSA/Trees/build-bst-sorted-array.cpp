@@ -38,6 +38,17 @@ Node* newNode(int n) {
 	return(temp);
 }
 
+bool pathSum(Node* root, int targetSum) {
+	if(root == NULL) return false;
+	bool isLeaf = (root->left == NULL) && (root->right == NULL);
+	if(isLeaf && targetSum - root->data == 0) return true;
+
+	// recursive cases 
+	return pathSum(root->left, targetSum - root->data) || pathSum(root->right, targetSum - root->data);
+}
+
+// iterative version using PostOrder 🔥
+
 bool validateBST(Node* root) {
 	stack <Node*> s;
 	Node* prev = NULL, *cur = root;
