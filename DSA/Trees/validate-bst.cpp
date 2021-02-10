@@ -67,7 +67,6 @@ int main(int argc, char* argv[]) {
 	root->left->right = newNode(2);
 	root->right->left = newNode(6);
 	root->right->right = newNode(8);
-	int targetSum = 12;
 	cout << validateBST(root) << endl;
 
 

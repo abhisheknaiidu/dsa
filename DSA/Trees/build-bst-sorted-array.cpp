@@ -1,86 +1,61 @@
-#pragma GCC optimize("Ofast")
-#include <algorithm>
-#include <bitset>
-#include <deque>
-#include <iostream>
-#include <iterator>
-#include <string>
-#include <map>
-#include <queue>
-#include <set>
-#include <stack>
-#include <vector>
-#include <unordered_map>
-#include <unordered_set>
-
-using namespace std;
-
-void abhisheknaiidu()
-{
-	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-#ifndef ONLINE_JUDGE
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
-#endif
-}
-
-struct Node {
-	int data;
-	Node* left;
-	Node* right;
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* buildBST(vector<int> nums, int start, int end) {
+        if(start>=end) return NULL;
+        
+        int mid = start + (end - start)/2;
+        TreeNode* newNode = new TreeNode(nums[mid]);
+        // Basic idea: Use a method that takes the start (inclusive), end (exclusive) to recursively create
+        // the left and right sub-trees. (Do this to avoid copying the input array by passing in start, end to
+        // just get a range/view of the array)
+        newNode->left = buildBST(nums, start, mid);
+        newNode->right = buildBST(nums, mid+1, end);
+        return newNode;
+    }
+    TreeNode* sortedArrayToBST(vector<int>& nums) {
+        int n = nums.size();
+        return buildBST(nums, 0, n);
+    }
 };
 
-// utility fxn
-Node* newNode(int n) {
-	Node* temp = new Node;
-	temp->data = n;
-	temp->left = temp->right = NULL;
-	return(temp);
-}
-
-bool pathSum(Node* root, int targetSum) {
-	if(root == NULL) return false;
-	bool isLeaf = (root->left == NULL) && (root->right == NULL);
-	if(isLeaf && targetSum - root->data == 0) return true;
-
-	// recursive cases 
-	return pathSum(root->left, targetSum - root->data) || pathSum(root->right, targetSum - root->data);
-}
-
-// iterative version using PostOrder 🔥
-
-bool validateBST(Node* root) {
-	stack <Node*> s;
-	Node* prev = NULL, *cur = root;
-	while(cur || !s.empty()) {
-	    while(cur) {
-	    	s.push(cur);
-	    	cur = cur->left;
-	    }
-	    cur = s.top();
-	    s.pop();
-	    if(prev != NULL && prev->data >= cur->data) return false;
-	    prev = cur;
-	    cur = cur->right;
-	}
-	return true;
-
-}
-
-
-int main(int argc, char* argv[]) {
-	abhisheknaiidu();
-
-	Node* root = newNode(5);
-	root->left = newNode(1);
-	root->right = newNode(7);
-	root->left->left = newNode(-1);
-	root->left->right = newNode(2);
-	root->right->left = newNode(6);
-	root->right->right = newNode(8);
-	int targetSum = 12;
-	cout << validateBST(root) << endl;
-
-
-   return 0;
-}
+// taking 0 - n-1 as a range - 
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* buildBST(vector<int> nums, int start, int end) {
+        if(start>end) return NULL;
+        
+        int mid = start + (end - start)/2;
+        TreeNode* newNode = new TreeNode(nums[mid]);
+        cout << start << " " << end << " " << mid << endl;
+        
+        newNode->left = buildBST(nums, start, mid-1);
+        newNode->right = buildBST(nums, mid+1, end);
+        return newNode;
+    }
+    TreeNode* sortedArrayToBST(vector<int>& nums) {
+        int n = nums.size();
+        return buildBST(nums, 0, n-1);
+    }
+};
