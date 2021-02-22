@@ -49,13 +49,11 @@ public:
 		map<char, bool> seen;
 		queue<char> q;
 		q.push(root);
+		seen[root] = true;
 		while(!q.empty()) {
 			char cur = q.front();
 			cout << cur << " ";
 			q.pop();
-			if(!seen[cur]) {
-				seen[cur] = true;
-			}
 			for(auto x: adjList[cur]) {
 				if(!seen[x.first]) {
 					seen[x.first] = true;
@@ -81,13 +79,11 @@ public:
 		map<char, bool> seen;
 		stack<char> s;
 		s.push(root);
+		seen[root] = true;
 		while(!s.empty()) {
 			char cur = s.top();
 			cout << cur << " -> ";
 			s.pop();
-			if(!seen[cur]) {
-				seen[cur] = true;
-			}
 			for(auto x: adjList[cur]) {
 				if(!seen[x.first]) {
 					seen[x.first] = true;
